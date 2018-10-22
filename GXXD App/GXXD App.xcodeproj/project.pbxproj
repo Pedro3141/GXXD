@@ -15,6 +15,8 @@
 		1FA684E4217AC937005455D6 /* PayViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA684E3217AC937005455D6 /* PayViewContoller.swift */; };
 		1FA684E6217AD1D5005455D6 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA684E5217AD1D5005455D6 /* RequestViewController.swift */; };
 		1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA684E7217AD80E005455D6 /* SendRViewController.swift */; };
+		1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */; };
+		1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCD0217D888100850682 /* MyQRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1FA684E3217AC937005455D6 /* PayViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewContoller.swift; sourceTree = "<group>"; };
 		1FA684E5217AD1D5005455D6 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		1FA684E7217AD80E005455D6 /* SendRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRViewController.swift; sourceTree = "<group>"; };
+		1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		1FEBFCD0217D888100850682 /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				1FA684E3217AC937005455D6 /* PayViewContoller.swift */,
 				1FA684E5217AD1D5005455D6 /* RequestViewController.swift */,
 				1FA684E7217AD80E005455D6 /* SendRViewController.swift */,
+				1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */,
+				1FEBFCD0217D888100850682 /* MyQRViewController.swift */,
 				1F66D5BF21768EB60071E67C /* Main.storyboard */,
 				1F66D5C221768EB90071E67C /* Assets.xcassets */,
 				1F66D5C421768EB90071E67C /* LaunchScreen.storyboard */,
@@ -144,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */,
 				1FA684E6217AD1D5005455D6 /* RequestViewController.swift in Sources */,
 				1FA684E4217AC937005455D6 /* PayViewContoller.swift in Sources */,
+				1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */,
 				1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */,
 				1F66D5BE21768EB60071E67C /* HomeViewController.swift in Sources */,
 				1F66D5BC21768EB60071E67C /* AppDelegate.swift in Sources */,

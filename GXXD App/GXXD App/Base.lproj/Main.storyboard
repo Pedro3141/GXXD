@@ -42,13 +42,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haO-90-2CS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1510" y="-63"/>
+            <point key="canvasLocation" x="-1559" y="-107"/>
         </scene>
         <!--Request View Controller-->
         <scene sceneID="reM-HJ-HsC">
             <objects>
                 <viewController storyboardIdentifier="RequestViewContoller" id="upJ-lb-g8W" customClass="RequestViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="RequestViewController" id="6OW-jA-lHU" customClass="RequestViewConteoller">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="RequestViewController" id="6OW-jA-lHU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZK-C9-ZNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855.20000000000005" y="-67.016491754122939"/>
+            <point key="canvasLocation" x="-826" y="-106"/>
         </scene>
         <!--SendR View Controller-->
         <scene sceneID="gvs-W6-ObS">
@@ -94,13 +94,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEND OR REQUEST SCREEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-d4-JL7">
-                                <rect key="frame" x="76" y="50" width="222" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="SendRequest2HomeButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj4-s4-L8b">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,6 +102,13 @@
                                     <action selector="SendR2Home:" destination="eiL-LF-I6q" eventType="touchUpInside" id="f3m-XT-2zS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEND OR REQUEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-d4-JL7">
+                                <rect key="frame" x="111" y="50" width="153" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZcZ-FA-6M3"/>
@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRu-eH-3gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855" y="653"/>
+            <point key="canvasLocation" x="-826" y="686"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -154,11 +154,17 @@
                                 <rect key="frame" x="56" y="559" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SCAN QR"/>
+                                <connections>
+                                    <action selector="ScanQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rj2-I1-X9L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-TG-l2K">
                                 <rect key="frame" x="253" y="559" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="MY QR"/>
+                                <connections>
+                                    <action selector="MyQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYL-N9-WnW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-9o-Lg1">
                                 <rect key="frame" x="90" y="608" width="194" height="30"/>
@@ -176,14 +182,86 @@
                         <segue destination="vh8-S6-x6X" kind="showDetail" identifier="PayViewSegue" id="dKl-LP-fYM"/>
                         <segue destination="upJ-lb-g8W" kind="showDetail" identifier="RequestViewSegue" id="YyK-df-n2T"/>
                         <segue destination="eiL-LF-I6q" kind="showDetail" identifier="SendRViewSegue" id="gCc-bg-XJO"/>
+                        <segue destination="vCn-lX-nKH" kind="showDetail" identifier="ScanQRSegue" id="l8T-c0-HEq"/>
+                        <segue destination="KBi-DK-zeo" kind="showDetail" identifier="MyQRViewSegue" id="VbT-6B-MAA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2236" y="-62"/>
+            <point key="canvasLocation" x="-2247" y="-107"/>
+        </scene>
+        <!--ScanQR View Controller-->
+        <scene sceneID="Svz-Q1-z81">
+            <objects>
+                <viewController storyboardIdentifier="ScanQRViewController" id="vCn-lX-nKH" customClass="ScanQRViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ScanQRViewController" id="QH7-u0-tiK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXe-i1-iqR">
+                                <rect key="frame" x="166" y="59" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yp-C4-Zcv">
+                                <rect key="frame" x="22" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="ScanQR2Home:" destination="vCn-lX-nKH" eventType="touchUpInside" id="Vis-Vr-K4X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XYq-c3-cFM"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="ScanQR2HomeSegue" id="ZOz-XX-66U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Um-Yk-waM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2247" y="686"/>
+        </scene>
+        <!--MyQR View Controller-->
+        <scene sceneID="KKT-uK-W4C">
+            <objects>
+                <viewController storyboardIdentifier="MyQRViewController" id="KBi-DK-zeo" customClass="MyQRViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Our-5a-4K8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MYQR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv0-zU-99k">
+                                <rect key="frame" x="163" y="63" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MyQR2Home" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v0-eg-vu9">
+                                <rect key="frame" x="22" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="MyQR2Home:" destination="KBi-DK-zeo" eventType="touchUpInside" id="qTR-0e-xmP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="t8k-H1-Snm"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="MyQR2HomeSegue" id="mSi-l5-9ei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6W-qX-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1559" y="686"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lj4-uA-l3r"/>
+        <segue reference="334-Gt-1tn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -22,6 +22,14 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "PayViewSegue", sender: self)
     }
     
+    @IBAction func ScanQRPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "ScanQRSegue", sender: self)
+    }
+    
+    @IBAction func MyQRPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "MyQRViewSegue", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
