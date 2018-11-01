@@ -11,6 +11,7 @@ import AVFoundation
 
 class ScanQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
+    @IBOutlet weak var square: UIImageView!
     var video = AVCaptureVideoPreviewLayer()
     
     @IBAction func ScanQR2Home(_ sender: Any) {
@@ -51,10 +52,27 @@ class ScanQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             video = AVCaptureVideoPreviewLayer(session: session)
             video.frame = view.layer.bounds
             view.layer.addSublayer(video)
+            self.view.bringSubviewToFront(square)
             
             session.startRunning()
-            
+    }
+   
+    //Reading QR Codes
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        if metadataObjects != nil && metadataObjects.count != 0 {
+            if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
+                if object.type == AVMetadataObject.ObjectType.qr {
+                    let alert = UIAlertController(title: "Your code is:", message: object.stringValue, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in
+                        UIPasteboard.general.string = object.stringValue
+                    }))
+                    present(alert, animated: true, completion: nil)
+                }
+            }
+        }
     }
     
-    
 }
+    
+
