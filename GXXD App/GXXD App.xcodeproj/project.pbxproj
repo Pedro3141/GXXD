@@ -17,6 +17,9 @@
 		1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA684E7217AD80E005455D6 /* SendRViewController.swift */; };
 		1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */; };
 		1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCD0217D888100850682 /* MyQRViewController.swift */; };
+		74B270BA218CD33D0056EEBA /* Klavika Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270B9218CD33D0056EEBA /* Klavika Light.otf */; };
+		74B270BC218CD34A0056EEBA /* DINPro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BB218CD34A0056EEBA /* DINPro Medium.otf */; };
+		74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BD218CD3520056EEBA /* DINPro Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		1FA684E7217AD80E005455D6 /* SendRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCD0217D888100850682 /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		74B270B9218CD33D0056EEBA /* Klavika Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Klavika Light.otf"; sourceTree = "<group>"; };
+		74B270BB218CD34A0056EEBA /* DINPro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Medium.otf"; sourceTree = "<group>"; };
+		74B270BD218CD3520056EEBA /* DINPro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		1F66D5BA21768EB60071E67C /* GXXD App */ = {
 			isa = PBXGroup;
 			children = (
+				74B270B8218CD30F0056EEBA /* Fonts */,
 				1F66D5BB21768EB60071E67C /* AppDelegate.swift */,
 				1F66D5BD21768EB60071E67C /* HomeViewController.swift */,
 				1FA684E3217AC937005455D6 /* PayViewContoller.swift */,
@@ -77,6 +84,16 @@
 				1F66D5C721768EB90071E67C /* Info.plist */,
 			);
 			path = "GXXD App";
+			sourceTree = "<group>";
+		};
+		74B270B8218CD30F0056EEBA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				74B270BD218CD3520056EEBA /* DINPro Bold.otf */,
+				74B270BB218CD34A0056EEBA /* DINPro Medium.otf */,
+				74B270B9218CD33D0056EEBA /* Klavika Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F66D5C621768EB90071E67C /* LaunchScreen.storyboard in Resources */,
+				74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */,
 				1F66D5C321768EB90071E67C /* Assets.xcassets in Resources */,
+				74B270BC218CD34A0056EEBA /* DINPro Medium.otf in Resources */,
 				1F66D5C121768EB60071E67C /* Main.storyboard in Resources */,
+				74B270BA218CD33D0056EEBA /* Klavika Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
