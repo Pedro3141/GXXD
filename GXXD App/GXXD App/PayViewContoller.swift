@@ -10,6 +10,13 @@ import UIKit
 
 class PayViewController: UIViewController {
     
+    @IBOutlet weak var AmountToPay: UILabel!
+    
+    //Number buttons have a tag number+1, 1 == 2, 0 == 1
+    @IBAction func Numbers(_ sender: UIButton)
+    {
+        AmountToPay.text = AmountToPay.text! + String(sender.tag-1)
+    }
     @IBAction func Pay2HomeButton(_ sender: Any) {
         
         self.performSegue(withIdentifier: "Pay2HomeSegue", sender: self)
