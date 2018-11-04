@@ -16,6 +16,11 @@ class PayViewController: UIViewController {
     @IBAction func Numbers(_ sender: UIButton)
     {
         AmountToPay.text = AmountToPay.text! + String(sender.tag-1)
+        
+        if sender.tag == 11 //Clear Button
+        {
+            AmountToPay.text = " ";
+        }
     }
     @IBAction func Pay2HomeButton(_ sender: Any) {
         
