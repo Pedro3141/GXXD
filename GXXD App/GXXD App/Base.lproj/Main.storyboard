@@ -382,9 +382,6 @@
                         <viewLayoutGuide key="safeArea" id="JN3-Q0-F3A"/>
                     </view>
                     <connections>
-<<<<<<< HEAD
-                        <segue destination="7fe-wA-30g" kind="showDetail" identifier="Request2HomeSegue" id="a0D-uZ-s5d"/>
-=======
                         <outlet property="AmountToRequest" destination="Ye4-fc-UNO" id="TQN-aI-apW"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Request2HomeSegue" id="a0D-uZ-s5d"/>
 >>>>>>> 215ee0e188e5832ef140241427f85359bf363e01
@@ -392,9 +389,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZK-C9-ZNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="-1344.8" y="71.514242878560722"/>
-=======
             <point key="canvasLocation" x="-826.39999999999998" y="-106.59670164917542"/>
 >>>>>>> 215ee0e188e5832ef140241427f85359bf363e01
         </scene>
@@ -861,9 +855,6 @@
         <image name="ScanQR01" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="MeJ-Sa-k7b"/>
-=======
         <segue reference="a0D-uZ-s5d"/>
 >>>>>>> 215ee0e188e5832ef140241427f85359bf363e01
     </inferredMetricsTieBreakers>
