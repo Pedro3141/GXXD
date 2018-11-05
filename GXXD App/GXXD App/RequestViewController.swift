@@ -10,6 +10,18 @@ import UIKit
 
 class RequestViewController: UIViewController {
     
+    @IBOutlet weak var AmountToRequest: UILabel!
+    
+    @IBAction func Numbers(_ sender: UIButton) {
+        AmountToRequest.text = AmountToRequest.text! + String(sender.tag-1)
+        
+        if sender.tag == 11 // Clear Button
+        {
+            AmountToRequest.text = " ";
+        }
+    }
+    
+    
     @IBAction func Request2Home(_ sender: Any) {
         self.performSegue(withIdentifier: "Request2HomeSegue", sender: self)
     }
