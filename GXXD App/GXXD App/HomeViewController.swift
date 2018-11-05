@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var menuButton: UIBarButtonItem! //button for side bar
+    
     @IBAction func SendRequestViewPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "SendRViewSegue", sender: self)
     }
@@ -34,8 +36,22 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        sideMenus() // side bar pan
+        
     }
-
+    
+    //function for bringing up side bar
+    func sideMenus(){
+        if revealViewController() != nil {
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController()?.rearViewRevealWidth = 200 //width of sidebar
+            //revealViewController()?.rightViewRevealWidth = 160 //if you want side bar for the right (i.e. settings?)
+            
+            //adds panning gesture for side bar
+            view.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer())
+        }
+    }
 	
 }
 

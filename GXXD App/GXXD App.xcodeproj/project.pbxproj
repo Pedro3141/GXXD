@@ -17,6 +17,7 @@
 		1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA684E7217AD80E005455D6 /* SendRViewController.swift */; };
 		1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */; };
 		1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCD0217D888100850682 /* MyQRViewController.swift */; };
+		275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */; };
 		74B270BA218CD33D0056EEBA /* Klavika Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270B9218CD33D0056EEBA /* Klavika Light.otf */; };
 		74B270BC218CD34A0056EEBA /* DINPro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BB218CD34A0056EEBA /* DINPro Medium.otf */; };
 		74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BD218CD3520056EEBA /* DINPro Bold.otf */; };
@@ -35,6 +36,9 @@
 		1FA684E7217AD80E005455D6 /* SendRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCD0217D888100850682 /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXXD App-Bridging-Header.h"; sourceTree = "<group>"; };
+		275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		74B270B9218CD33D0056EEBA /* Klavika Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Klavika Light.otf"; sourceTree = "<group>"; };
 		74B270BB218CD34A0056EEBA /* DINPro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Medium.otf"; sourceTree = "<group>"; };
 		74B270BD218CD3520056EEBA /* DINPro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Bold.otf"; sourceTree = "<group>"; };
@@ -81,7 +85,10 @@
 				1F66D5BF21768EB60071E67C /* Main.storyboard */,
 				1F66D5C221768EB90071E67C /* Assets.xcassets */,
 				1F66D5C421768EB90071E67C /* LaunchScreen.storyboard */,
+				275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */,
+				275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */,
 				1F66D5C721768EB90071E67C /* Info.plist */,
+				275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */,
 			);
 			path = "GXXD App";
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 				TargetAttributes = {
 					1F66D5B721768EB60071E67C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -173,6 +181,7 @@
 				1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */,
 				1FA684E6217AD1D5005455D6 /* RequestViewController.swift in Sources */,
 				1FA684E4217AC937005455D6 /* PayViewContoller.swift in Sources */,
+				275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */,
 				1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */,
 				1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */,
 				1F66D5BE21768EB60071E67C /* HomeViewController.swift in Sources */,
@@ -322,15 +331,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V7X6D7J5Q;
+				DEVELOPMENT_TEAM = M98NPPW3ZC;
 				INFOPLIST_FILE = "GXXD App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gxxdapp.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.test123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GXXD App/GXXD App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,15 +354,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V7X6D7J5Q;
+				DEVELOPMENT_TEAM = M98NPPW3ZC;
 				INFOPLIST_FILE = "GXXD App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gxxdapp.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.test123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GXXD App/GXXD App-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
