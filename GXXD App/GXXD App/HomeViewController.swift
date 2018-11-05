@@ -45,7 +45,7 @@ class HomeViewController: UIViewController {
         if revealViewController() != nil {
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            revealViewController()?.rearViewRevealWidth = 200 //width of sidebar
+            revealViewController()?.rearViewRevealWidth = 250 //width of sidebar
             //revealViewController()?.rightViewRevealWidth = 160 //if you want side bar for the right (i.e. settings?)
             
             //adds panning gesture for side bar
