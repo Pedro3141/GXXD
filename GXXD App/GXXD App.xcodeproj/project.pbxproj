@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3D83EA21924329002FC82C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D83E921924329002FC82C /* AboutViewController.swift */; };
 		1F66D5BC21768EB60071E67C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66D5BB21768EB60071E67C /* AppDelegate.swift */; };
 		1F66D5BE21768EB60071E67C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66D5BD21768EB60071E67C /* HomeViewController.swift */; };
 		1F66D5C121768EB60071E67C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F66D5BF21768EB60071E67C /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3D83E921924329002FC82C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		1F66D5B821768EB60071E67C /* GXXD App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GXXD App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F66D5BB21768EB60071E67C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F66D5BD21768EB60071E67C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -80,15 +82,16 @@
 				1FA684E3217AC937005455D6 /* PayViewContoller.swift */,
 				1FA684E5217AD1D5005455D6 /* RequestViewController.swift */,
 				1FA684E7217AD80E005455D6 /* SendRViewController.swift */,
+				1F3D83E921924329002FC82C /* AboutViewController.swift */,
 				1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */,
 				1FEBFCD0217D888100850682 /* MyQRViewController.swift */,
 				1F66D5BF21768EB60071E67C /* Main.storyboard */,
-				1F66D5C221768EB90071E67C /* Assets.xcassets */,
 				1F66D5C421768EB90071E67C /* LaunchScreen.storyboard */,
+				1F66D5C221768EB90071E67C /* Assets.xcassets */,
 				275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */,
+				275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */,
 				275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */,
 				1F66D5C721768EB90071E67C /* Info.plist */,
-				275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */,
 			);
 			path = "GXXD App";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */,
 				1FA684E6217AD1D5005455D6 /* RequestViewController.swift in Sources */,
 				1FA684E4217AC937005455D6 /* PayViewContoller.swift in Sources */,
+				1F3D83EA21924329002FC82C /* AboutViewController.swift in Sources */,
 				275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */,
 				1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */,
 				1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */,
