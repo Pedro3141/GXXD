@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="DINPro Bold.otf">
+            <string>DINPro-Bold</string>
+        </array>
         <array key="DINPro Medium.otf">
             <string>DINPro-Medium</string>
         </array>
@@ -45,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CalcGround" translatesAutoresizingMaskIntoConstraints="NO" id="pM6-CI-9vN">
-                                <rect key="frame" x="7" y="415" width="363" height="143"/>
+                                <rect key="frame" x="7" y="414" width="363" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0A-Qe-v5p">
@@ -181,16 +184,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pay $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="062-ez-MJh">
-                                <rect key="frame" x="60" y="370" width="65" height="34"/>
+                                <rect key="frame" x="16" y="370" width="89" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnw-lE-2ML">
-                                <rect key="frame" x="123" y="359" width="157" height="56"/>
+                                <rect key="frame" x="101" y="365" width="157" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -245,7 +248,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CalcGround" translatesAutoresizingMaskIntoConstraints="NO" id="pCJ-fG-Fm7">
-                                <rect key="frame" x="6" y="415" width="363" height="143"/>
+                                <rect key="frame" x="7" y="414" width="363" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkq-Ws-tBt">
@@ -381,16 +384,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpB-IG-9aR">
-                                <rect key="frame" x="60" y="370" width="122" height="34"/>
+                                <rect key="frame" x="17" y="370" width="253" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye4-fc-UNO">
-                                <rect key="frame" x="176" y="359" width="157" height="56"/>
+                                <rect key="frame" x="177" y="365" width="157" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -597,18 +600,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUX-gc-Iwu">
-                                                    <rect key="frame" x="23" y="-2" width="71" height="46"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aS-iy-loH">
+                                                    <rect key="frame" x="23" y="-2" width="78" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
-                                                    <state key="normal" title="Social">
+                                                    <state key="normal" title="Profile">
                                                         <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="9U0-bb-bHf" kind="show" identifier="SideSocialSegue" id="zPS-Pa-5oI"/>
+                                                        <segue destination="TSO-oI-WJX" kind="show" identifier="SideProfileSegue" id="waa-B0-7A6"/>
                                                     </connections>
                                                 </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testuser" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-Db-p5A">
+                                                    <rect key="frame" x="101" y="6" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -619,16 +626,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aS-iy-loH">
-                                                    <rect key="frame" x="23" y="-3" width="78" height="46"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUX-gc-Iwu">
+                                                    <rect key="frame" x="23" y="-2" width="71" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
-                                                    <state key="normal" title="Profile">
+                                                    <state key="normal" title="Social">
                                                         <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="TSO-oI-WJX" kind="show" identifier="SideProfileSegue" id="waa-B0-7A6"/>
+                                                        <segue destination="9U0-bb-bHf" kind="show" identifier="SideSocialSegue" id="zPS-Pa-5oI"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -736,15 +743,6 @@
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2X-Hd-Ks9">
-                                <rect key="frame" x="129" y="135" width="12" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="A2X-Hd-Ks9" secondAttribute="height" multiplier="11:20" id="amp-Kn-f0d"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-TP-5an">
                                 <rect key="frame" x="91" y="399" width="34" height="34"/>
                                 <constraints>
@@ -762,21 +760,45 @@
                                 <rect key="frame" x="136" y="50" width="103" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-95-Jpo">
-                                <rect key="frame" x="136" y="128" width="116" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="6x4-2v-LgQ"/>
-                                    <constraint firstAttribute="width" secondItem="UV6-95-Jpo" secondAttribute="height" multiplier="29:9" id="sAq-Cr-X23"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-95-Jpo">
+                                <rect key="frame" x="136" y="128" width="116" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
                                 <state key="normal" title="ADD MONEY">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd4-Zz-7ee">
+                                <rect key="frame" x="69" y="156" width="56" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="90"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AVAILABLE BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTX-NP-5KM">
+                                <rect key="frame" x="121" y="258" width="147" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="129" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taU-aB-bgG">
+                                <rect key="frame" x="109" y="150" width="163" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2X-Hd-Ks9">
+                                <rect key="frame" x="136" y="134" width="12" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="6Wx-Gk-M0A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X0y-9o-Lg1" secondAttribute="bottom" constant="72" id="CbS-84-oa3"/>
                             <constraint firstItem="qYG-TG-l2K" firstAttribute="centerX" secondItem="6Ov-vv-y0J" secondAttribute="centerX" id="CpR-hg-PTD"/>
                             <constraint firstItem="qgE-fs-NN5" firstAttribute="baseline" secondItem="Mef-5o-c0I" secondAttribute="baseline" id="N1u-Vj-fuU"/>
@@ -785,16 +807,13 @@
                             <constraint firstItem="qYG-TG-l2K" firstAttribute="centerX" secondItem="Mef-5o-c0I" secondAttribute="centerX" id="TBb-Pz-tD4"/>
                             <constraint firstItem="qYG-TG-l2K" firstAttribute="width" secondItem="tyn-Rw-Jwl" secondAttribute="width" id="V8Q-Px-Brn"/>
                             <constraint firstItem="tyn-Rw-Jwl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="WJN-N3-YU7"/>
-                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="XNr-ZR-QrN"/>
                             <constraint firstItem="qgE-fs-NN5" firstAttribute="top" secondItem="IhC-TP-5an" secondAttribute="bottom" constant="71" id="cEW-lE-cgz"/>
                             <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="qYG-TG-l2K" secondAttribute="bottom" constant="44" id="chM-Xq-EQC"/>
-                            <constraint firstItem="UV6-95-Jpo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="ftx-1Q-Mq7"/>
                             <constraint firstItem="Mef-5o-c0I" firstAttribute="top" secondItem="6Ov-vv-y0J" secondAttribute="bottom" constant="71" id="gxV-pr-x3R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qYG-TG-l2K" secondAttribute="trailing" constant="58" id="jFD-Pv-b0L"/>
                             <constraint firstItem="qgE-fs-NN5" firstAttribute="centerX" secondItem="IhC-TP-5an" secondAttribute="centerX" id="jPp-St-cGx"/>
                             <constraint firstItem="qgE-fs-NN5" firstAttribute="centerX" secondItem="tyn-Rw-Jwl" secondAttribute="centerX" id="jnY-8C-u36"/>
                             <constraint firstItem="qYG-TG-l2K" firstAttribute="height" secondItem="tyn-Rw-Jwl" secondAttribute="height" id="lxc-jd-bxo"/>
-                            <constraint firstItem="UV6-95-Jpo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVN-rH-0Tk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X0y-9o-Lg1" secondAttribute="trailing" symbolic="YES" id="ulK-Hf-iQJ"/>
                             <constraint firstItem="X0y-9o-Lg1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="x8x-bb-piO"/>
                         </constraints>
@@ -889,14 +908,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MyQR01" translatesAutoresizingMaskIntoConstraints="NO" id="2zH-py-qyr">
-                                <rect key="frame" x="37" y="26" width="300" height="300"/>
+                                <rect key="frame" x="37" y="119" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MYQR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv0-zU-99k">
-                                <rect key="frame" x="163" y="323" width="49" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testuser" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-5Z-Ldp">
+                                <rect key="frame" x="21" y="84" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCF-9D-cTl">
+                                <rect key="frame" x="104" y="96" width="46" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sacramento, California" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdc-4O-Bcw">
+                                <rect key="frame" x="104" y="126" width="174" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR to send payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8D-ui-Q0d">
+                                <rect key="frame" x="87" y="369" width="209" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -909,7 +946,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6W-qX-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3078" y="811"/>
+            <point key="canvasLocation" x="-3079.1999999999998" y="810.94452773613204"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CKr-RO-ReA">
@@ -936,9 +973,10 @@
         <image name="MyQR01" width="1024" height="1024"/>
         <image name="ScanQR01" width="1024" height="1024"/>
         <image name="ham" width="512" height="512"/>
+        <image name="testuser" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lj4-uA-l3r"/>
+        <segue reference="mSi-l5-9ei"/>
         <segue reference="a0D-uZ-s5d"/>
         <segue reference="YZX-UC-TbB"/>
     </inferredMetricsTieBreakers>
