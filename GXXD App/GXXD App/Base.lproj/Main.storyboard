@@ -807,6 +807,13 @@
                                     <action selector="RequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUR-IX-HC6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Transaction " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-t0-zek">
+                                <rect key="frame" x="69" y="308" width="131" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -952,7 +959,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="24"/>
                                 <state key="normal" title="Show QR">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="GenerateQR:" destination="KBi-DK-zeo" eventType="touchUpInside" id="0qd-Hl-Ttn"/>
@@ -1002,6 +1009,6 @@
         <segue reference="YyK-df-n2T"/>
         <segue reference="mSi-l5-9ei"/>
         <segue reference="a0D-uZ-s5d"/>
-        <segue reference="YZX-UC-TbB"/>
+        <segue reference="hAY-Ac-hVA"/>
     </inferredMetricsTieBreakers>
 </document>

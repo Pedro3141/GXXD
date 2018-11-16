@@ -12,13 +12,12 @@ import UIKit
 class MyQRViewController: UIViewController{
     @IBOutlet weak var QRCodeContainer: UIImageView!
     
-    let filterForQRCode = "CIQRCodeGenerator"
-    var WalletID = "Wallet ID Goes Here" //Set WalletID = WalletKey created in Stellar
+    var WalletID = "Wallet TEst Here" //Set WalletID = WalletKey created in Stellar
     
     @IBAction func GenerateQR(_ sender: UIButton) {
         if let textToConvert =
             WalletID.data(using: .ascii) {
-            let filter = CIFilter(name: filterForQRCode)
+            let filter = CIFilter(name: "CIQRCodeGenerator")
             filter?.setValue(textToConvert, forKey:"inputMessage")
             let transform = CGAffineTransform(scaleX: 10, y: 10)
             let MyQrOut = UIImage(ciImage: (filter?.outputImage?.transformed(by: transform))!)
