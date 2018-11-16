@@ -74,6 +74,20 @@
 			remoteGlobalIDString = 743DF528201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostUITests";
 		};
+		2754EE86219F50F9008DE443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7445E9FB201B106500470E0A;
+			remoteInfo = stellarsdk;
+		};
+		2754EE88219F50FD008DE443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 743DF4E4201F130100713DE7;
+			remoteInfo = "stellarsdk-macOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -188,6 +202,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				2754EE89219F50FD008DE443 /* PBXTargetDependency */,
+				2754EE87219F50F9008DE443 /* PBXTargetDependency */,
 			);
 			name = "GXXD App";
 			productName = "GXXD App";
@@ -320,6 +336,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2754EE87219F50F9008DE443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = stellarsdk;
+			targetProxy = 2754EE86219F50F9008DE443 /* PBXContainerItemProxy */;
+		};
+		2754EE89219F50FD008DE443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "stellarsdk-macOS";
+			targetProxy = 2754EE88219F50FD008DE443 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1F66D5BF21768EB60071E67C /* Main.storyboard */ = {
