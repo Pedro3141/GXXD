@@ -6,24 +6,24 @@
 //  Copyright © 2018 GXXDPAY. All rights reserved.
 //
 
+import stellarsdk
 import UIKit
-
 
 class MyQRViewController: UIViewController{
     @IBOutlet weak var QRCodeContainer: UIImageView!
     
-    var WalletID = "Wallet ID Here" //Set WalletID = WalletKey created in Stellar
+    let keyPair = try! KeyPair.generateRandomKeyPair() //test
     
-    @IBAction func GenerateQR(_ sender: UIButton) {
-        if let textToConvert =
-            WalletID.data(using: .ascii) {
-            let filter = CIFilter(name: "CIQRCodeGenerator")
-            filter?.setValue(textToConvert, forKey:"inputMessage")
-            let transform = CGAffineTransform(scaleX: 10, y: 10)
+    //Generate QR code from account
+    func GenerateQR() {
+        if let textToConvert = String(keyPair.accountId).data(using: .ascii) {
+            let filter = CIFilter(name: "CIQRCodeGenerator") //standard QR filter
+            filter?.setValue(textToConvert, forKey:"inputMessage") //message
+            let transform = CGAffineTransform(scaleX: 10, y: 10) //crisping image
             let MyQrOut = UIImage(ciImage: (filter?.outputImage?.transformed(by: transform))!)
             QRCodeContainer.image = MyQrOut
-            sender.isHidden = true
-        }
+            //sender.isHidden = true
+            }
         
     }//Function generates a QRCode from the variable WalletID passed in from stellar API
     
@@ -36,6 +36,7 @@ class MyQRViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        GenerateQR()
     }
     
     

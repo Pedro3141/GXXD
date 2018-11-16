@@ -203,7 +203,7 @@
                     </view>
                     <connections>
                         <outlet property="AmountToPay" destination="rnw-lE-2ML" id="rmi-e8-zxw"/>
-                        <segue destination="7fe-wA-30g" kind="show" identifier="Pay2HomeSegue" id="334-Gt-1tn"/>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="Pay2HomeSegue" id="dyY-5Y-1eR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haO-90-2CS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -403,12 +403,12 @@
                     </view>
                     <connections>
                         <outlet property="AmountToRequest" destination="Ye4-fc-UNO" id="TQN-aI-apW"/>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Request2HomeSegue" id="a0D-uZ-s5d"/>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="Request2HomeSegue" id="du4-9j-8ZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZK-C9-ZNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1303.2" y="71.514242878560722"/>
+            <point key="canvasLocation" x="-1310" y="72"/>
         </scene>
         <!--SendR View Controller-->
         <scene sceneID="gvs-W6-ObS">
@@ -445,7 +445,7 @@
                         <viewLayoutGuide key="safeArea" id="ZcZ-FA-6M3"/>
                     </view>
                     <connections>
-                        <segue destination="7fe-wA-30g" kind="showDetail" identifier="SendR2HomeSegue" id="lj4-uA-l3r"/>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="SendR2HomeSegue" id="IX5-Bg-q1i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRu-eH-3gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -895,7 +895,7 @@
                     </view>
                     <connections>
                         <outlet property="square" destination="HNV-bO-Tpy" id="Rer-Nm-riN"/>
-                        <segue destination="7fe-wA-30g" kind="showDetail" identifier="ScanQR2HomeSegue" id="ZOz-XX-66U"/>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="ScanQR2HomeSegue" id="TfN-se-LC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Um-Yk-waM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -954,24 +954,13 @@
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5Q-4U-kae">
-                                <rect key="frame" x="139" y="224" width="96" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="24"/>
-                                <state key="normal" title="Show QR">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="GenerateQR:" destination="KBi-DK-zeo" eventType="touchUpInside" id="0qd-Hl-Ttn"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="t8k-H1-Snm"/>
                     </view>
                     <connections>
                         <outlet property="QRCodeContainer" destination="2zH-py-qyr" id="HXK-z9-Awq"/>
-                        <segue destination="7fe-wA-30g" kind="showDetail" identifier="MyQR2HomeSegue" id="mSi-l5-9ei"/>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="MyQR2HomeSegue" id="wwQ-qy-ddZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6W-qX-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1006,9 +995,6 @@
         <image name="testuser" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YyK-df-n2T"/>
-        <segue reference="mSi-l5-9ei"/>
-        <segue reference="a0D-uZ-s5d"/>
-        <segue reference="hAY-Ac-hVA"/>
+        <segue reference="TfN-se-LC8"/>
     </inferredMetricsTieBreakers>
 </document>

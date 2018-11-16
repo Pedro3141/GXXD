@@ -14,6 +14,7 @@ class ScanQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     @IBOutlet weak var square: UIImageView!
     var video = AVCaptureVideoPreviewLayer()
     
+    //Back button
     @IBAction func ScanQR2Home(_ sender: Any) {
         self.performSegue(withIdentifier: "ScanQR2HomeSegue", sender: self)
     }
