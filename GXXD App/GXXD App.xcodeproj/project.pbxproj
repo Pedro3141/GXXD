@@ -25,68 +25,54 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2754EE5C219F4BC2008DE443 /* PBXContainerItemProxy */ = {
+		2754EE78219F50B1008DE443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7445E9FC201B106500470E0A;
 			remoteInfo = stellarsdk;
 		};
-		2754EE5E219F4BC2008DE443 /* PBXContainerItemProxy */ = {
+		2754EE7A219F50B1008DE443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7445EA05201B106500470E0A;
 			remoteInfo = stellarsdkTests;
 		};
-		2754EE60219F4BC2008DE443 /* PBXContainerItemProxy */ = {
+		2754EE7C219F50B1008DE443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF4E5201F130100713DE7;
 			remoteInfo = "stellarsdk-macOS";
 		};
-		2754EE62219F4BC2008DE443 /* PBXContainerItemProxy */ = {
+		2754EE7E219F50B1008DE443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF4ED201F130200713DE7;
 			remoteInfo = "stellarsdk-macOSTests";
 		};
-		2754EE64219F4BC2008DE443 /* PBXContainerItemProxy */ = {
+		2754EE80219F50B1008DE443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF50A201F458400713DE7;
 			remoteInfo = "stellarsdkTests-Host";
 		};
-		2754EE66219F4BC2008DE443 /* PBXContainerItemProxy */ = {
+		2754EE82219F50B1008DE443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF51D201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostTests";
 		};
-		2754EE68219F4BC2008DE443 /* PBXContainerItemProxy */ = {
+		2754EE84219F50B1008DE443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+			containerPortal = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF528201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostUITests";
-		};
-		2754EE6A219F4BD2008DE443 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7445E9FB201B106500470E0A;
-			remoteInfo = stellarsdk;
-		};
-		2754EE6C219F4BD9008DE443 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 743DF4E4201F130100713DE7;
-			remoteInfo = "stellarsdk-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -104,7 +90,7 @@
 		1FA684E7217AD80E005455D6 /* SendRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCD0217D888100850682 /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
-		2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../stellar-ios-mac-sdk/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
+		2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../stellar-ios-mac-sdk/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
 		275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXXD App-Bridging-Header.h"; sourceTree = "<group>"; };
 		275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -129,7 +115,6 @@
 			children = (
 				1F66D5BA21768EB60071E67C /* GXXD App */,
 				1F66D5B921768EB60071E67C /* Products */,
-				2754EE51219F4BAD008DE443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,28 +145,21 @@
 				275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */,
 				275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */,
 				1F66D5C721768EB90071E67C /* Info.plist */,
+				2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */,
 			);
 			path = "GXXD App";
 			sourceTree = "<group>";
 		};
-		2754EE51219F4BAD008DE443 /* Frameworks */ = {
+		2754EE6F219F50B1008DE443 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		2754EE53219F4BC2008DE443 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2754EE5D219F4BC2008DE443 /* stellarsdk.framework */,
-				2754EE5F219F4BC2008DE443 /* stellarsdkTests.xctest */,
-				2754EE61219F4BC2008DE443 /* stellarsdk.framework */,
-				2754EE63219F4BC2008DE443 /* stellarsdk-macOSTests.xctest */,
-				2754EE65219F4BC2008DE443 /* stellarsdkTests-Host.app */,
-				2754EE67219F4BC2008DE443 /* stellarsdkTests-HostTests.xctest */,
-				2754EE69219F4BC2008DE443 /* stellarsdkTests-HostUITests.xctest */,
+				2754EE79219F50B1008DE443 /* stellarsdk.framework */,
+				2754EE7B219F50B1008DE443 /* stellarsdkTests.xctest */,
+				2754EE7D219F50B1008DE443 /* stellarsdk.framework */,
+				2754EE7F219F50B1008DE443 /* stellarsdk-macOSTests.xctest */,
+				2754EE81219F50B1008DE443 /* stellarsdkTests-Host.app */,
+				2754EE83219F50B1008DE443 /* stellarsdkTests-HostTests.xctest */,
+				2754EE85219F50B1008DE443 /* stellarsdkTests-HostUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,8 +188,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2754EE6D219F4BD9008DE443 /* PBXTargetDependency */,
-				2754EE6B219F4BD2008DE443 /* PBXTargetDependency */,
 			);
 			name = "GXXD App";
 			productName = "GXXD App";
@@ -247,8 +223,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2754EE53219F4BC2008DE443 /* Products */;
-					ProjectRef = 2754EE52219F4BC2008DE443 /* stellarsdk.xcodeproj */;
+					ProductGroup = 2754EE6F219F50B1008DE443 /* Products */;
+					ProjectRef = 2754EE6E219F50B1008DE443 /* stellarsdk.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -259,53 +235,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2754EE5D219F4BC2008DE443 /* stellarsdk.framework */ = {
+		2754EE79219F50B1008DE443 /* stellarsdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = stellarsdk.framework;
-			remoteRef = 2754EE5C219F4BC2008DE443 /* PBXContainerItemProxy */;
+			remoteRef = 2754EE78219F50B1008DE443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2754EE5F219F4BC2008DE443 /* stellarsdkTests.xctest */ = {
+		2754EE7B219F50B1008DE443 /* stellarsdkTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = stellarsdkTests.xctest;
-			remoteRef = 2754EE5E219F4BC2008DE443 /* PBXContainerItemProxy */;
+			remoteRef = 2754EE7A219F50B1008DE443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2754EE61219F4BC2008DE443 /* stellarsdk.framework */ = {
+		2754EE7D219F50B1008DE443 /* stellarsdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = stellarsdk.framework;
-			remoteRef = 2754EE60219F4BC2008DE443 /* PBXContainerItemProxy */;
+			remoteRef = 2754EE7C219F50B1008DE443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2754EE63219F4BC2008DE443 /* stellarsdk-macOSTests.xctest */ = {
+		2754EE7F219F50B1008DE443 /* stellarsdk-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdk-macOSTests.xctest";
-			remoteRef = 2754EE62219F4BC2008DE443 /* PBXContainerItemProxy */;
+			remoteRef = 2754EE7E219F50B1008DE443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2754EE65219F4BC2008DE443 /* stellarsdkTests-Host.app */ = {
+		2754EE81219F50B1008DE443 /* stellarsdkTests-Host.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "stellarsdkTests-Host.app";
-			remoteRef = 2754EE64219F4BC2008DE443 /* PBXContainerItemProxy */;
+			remoteRef = 2754EE80219F50B1008DE443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2754EE67219F4BC2008DE443 /* stellarsdkTests-HostTests.xctest */ = {
+		2754EE83219F50B1008DE443 /* stellarsdkTests-HostTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdkTests-HostTests.xctest";
-			remoteRef = 2754EE66219F4BC2008DE443 /* PBXContainerItemProxy */;
+			remoteRef = 2754EE82219F50B1008DE443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2754EE69219F4BC2008DE443 /* stellarsdkTests-HostUITests.xctest */ = {
+		2754EE85219F50B1008DE443 /* stellarsdkTests-HostUITests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdkTests-HostUITests.xctest";
-			remoteRef = 2754EE68219F4BC2008DE443 /* PBXContainerItemProxy */;
+			remoteRef = 2754EE84219F50B1008DE443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -344,19 +320,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2754EE6B219F4BD2008DE443 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = stellarsdk;
-			targetProxy = 2754EE6A219F4BD2008DE443 /* PBXContainerItemProxy */;
-		};
-		2754EE6D219F4BD9008DE443 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "stellarsdk-macOS";
-			targetProxy = 2754EE6C219F4BD9008DE443 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1F66D5BF21768EB60071E67C /* Main.storyboard */ = {
