@@ -684,19 +684,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-vv-y0J">
-                                <rect key="frame" x="228.5" y="399" width="77" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6Ov-vv-y0J" secondAttribute="height" multiplier="34:15" id="KdG-je-G0k"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <state key="normal" title="REQUEST">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="RequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUR-IX-HC6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-Rw-Jwl">
                                 <rect key="frame" x="58" y="417" width="100" height="100"/>
                                 <constraints>
@@ -743,15 +730,26 @@
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-TP-5an">
-                                <rect key="frame" x="91" y="399" width="34" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-TP-5an">
+                                <rect key="frame" x="88" y="377" width="41" height="42.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IhC-TP-5an" secondAttribute="height" multiplier="1:1" id="GkO-K4-Aom"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="22"/>
                                 <state key="normal" title="PAY">
                                     <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="PayViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FnG-H7-b9N"/>
                                 </connections>
@@ -796,6 +794,19 @@
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-vv-y0J">
+                                <rect key="frame" x="219" y="377" width="96" height="42.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Ov-vv-y0J" secondAttribute="height" multiplier="34:15" id="KdG-je-G0k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="22"/>
+                                <state key="normal" title="REQUEST">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUR-IX-HC6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -907,8 +918,8 @@
                                 <rect key="frame" x="136" y="0.0" width="103" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MyQR01" translatesAutoresizingMaskIntoConstraints="NO" id="2zH-py-qyr">
-                                <rect key="frame" x="37" y="119" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2zH-py-qyr">
+                                <rect key="frame" x="97" y="155" width="180" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testuser" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-5Z-Ldp">
@@ -930,17 +941,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR to send payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8D-ui-Q0d">
-                                <rect key="frame" x="87" y="369" width="209" height="27"/>
+                                <rect key="frame" x="87" y="343" width="209" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5Q-4U-kae">
+                                <rect key="frame" x="139" y="224" width="96" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="24"/>
+                                <state key="normal" title="Show QR">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GenerateQR:" destination="KBi-DK-zeo" eventType="touchUpInside" id="0qd-Hl-Ttn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="t8k-H1-Snm"/>
                     </view>
                     <connections>
+                        <outlet property="QRCodeContainer" destination="2zH-py-qyr" id="HXK-z9-Awq"/>
                         <segue destination="7fe-wA-30g" kind="showDetail" identifier="MyQR2HomeSegue" id="mSi-l5-9ei"/>
                     </connections>
                 </viewController>
@@ -976,6 +999,7 @@
         <image name="testuser" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="YyK-df-n2T"/>
         <segue reference="mSi-l5-9ei"/>
         <segue reference="a0D-uZ-s5d"/>
         <segue reference="YZX-UC-TbB"/>
