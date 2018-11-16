@@ -12,7 +12,7 @@ import UIKit
 class MyQRViewController: UIViewController{
     @IBOutlet weak var QRCodeContainer: UIImageView!
     
-    var WalletID = "Wallet TEst Here" //Set WalletID = WalletKey created in Stellar
+    var WalletID = "Wallet ID Here" //Set WalletID = WalletKey created in Stellar
     
     @IBAction func GenerateQR(_ sender: UIButton) {
         if let textToConvert =
