@@ -19,8 +19,9 @@
 		1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */; };
 		1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCD0217D888100850682 /* MyQRViewController.swift */; };
 		275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */; };
-		27DD6064219F686C00C202BD /* stellarsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DD6041219F658E00C202BD /* stellarsdk.framework */; };
-		27DD6066219F687600C202BD /* stellarsdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DD603D219F658E00C202BD /* stellarsdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27F0892821A0C568007F1DCF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27F0892621A0C568007F1DCF /* Model.xcdatamodeld */; };
+		27F0893621A0CAF7007F1DCF /* stellarsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DD603D219F658E00C202BD /* stellarsdk.framework */; };
+		27F0893721A0CAF7007F1DCF /* stellarsdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DD603D219F658E00C202BD /* stellarsdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74B270BA218CD33D0056EEBA /* Klavika Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270B9218CD33D0056EEBA /* Klavika Light.otf */; };
 		74B270BC218CD34A0056EEBA /* DINPro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BB218CD34A0056EEBA /* DINPro Medium.otf */; };
 		74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BD218CD3520056EEBA /* DINPro Bold.otf */; };
@@ -76,21 +77,21 @@
 			remoteGlobalIDString = 743DF528201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostUITests";
 		};
-		27DD605C219F680C00C202BD /* PBXContainerItemProxy */ = {
+		27DD6067219F687600C202BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 7445E9FB201B106500470E0A;
 			remoteInfo = stellarsdk;
 		};
-		27DD6060219F680C00C202BD /* PBXContainerItemProxy */ = {
+		27F0893021A0C9F1007F1DCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 743DF4E4201F130100713DE7;
 			remoteInfo = "stellarsdk-macOS";
 		};
-		27DD6067219F687600C202BD /* PBXContainerItemProxy */ = {
+		27F0893821A0CAF7007F1DCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 1;
@@ -100,13 +101,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		27DD6069219F687600C202BD /* Embed Frameworks */ = {
+		27F0893A21A0CAF7007F1DCF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				27DD6066219F687600C202BD /* stellarsdk.framework in Embed Frameworks */,
+				27F0893721A0CAF7007F1DCF /* stellarsdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +132,7 @@
 		275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../stellar-ios-mac-sdk/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
+		27F0892721A0C568007F1DCF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		74B270B9218CD33D0056EEBA /* Klavika Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Klavika Light.otf"; sourceTree = "<group>"; };
 		74B270BB218CD34A0056EEBA /* DINPro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Medium.otf"; sourceTree = "<group>"; };
 		74B270BD218CD3520056EEBA /* DINPro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Bold.otf"; sourceTree = "<group>"; };
@@ -141,7 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27DD6064219F686C00C202BD /* stellarsdk.framework in Frameworks */,
+				27F0893621A0CAF7007F1DCF /* stellarsdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				1F66D5BB21768EB60071E67C /* AppDelegate.swift */,
+				27F0892621A0C568007F1DCF /* Model.xcdatamodeld */,
 				1F66D5BD21768EB60071E67C /* HomeViewController.swift */,
 				1FA684E3217AC937005455D6 /* PayViewContoller.swift */,
 				1FA684E5217AD1D5005455D6 /* RequestViewController.swift */,
@@ -238,14 +241,14 @@
 				1F66D5B421768EB60071E67C /* Sources */,
 				1F66D5B521768EB60071E67C /* Frameworks */,
 				1F66D5B621768EB60071E67C /* Resources */,
-				27DD6069219F687600C202BD /* Embed Frameworks */,
+				27F0893A21A0CAF7007F1DCF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				27DD605D219F680C00C202BD /* PBXTargetDependency */,
-				27DD6061219F680C00C202BD /* PBXTargetDependency */,
 				27DD6068219F687600C202BD /* PBXTargetDependency */,
+				27F0893121A0C9F1007F1DCF /* PBXTargetDependency */,
+				27F0893921A0CAF7007F1DCF /* PBXTargetDependency */,
 			);
 			name = "GXXD App";
 			productName = "GXXD App";
@@ -372,6 +375,7 @@
 				275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */,
 				1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */,
 				1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */,
+				27F0892821A0C568007F1DCF /* Model.xcdatamodeld in Sources */,
 				1F66D5BE21768EB60071E67C /* HomeViewController.swift in Sources */,
 				1F66D5BC21768EB60071E67C /* AppDelegate.swift in Sources */,
 			);
@@ -380,20 +384,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27DD605D219F680C00C202BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = stellarsdk;
-			targetProxy = 27DD605C219F680C00C202BD /* PBXContainerItemProxy */;
-		};
-		27DD6061219F680C00C202BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "stellarsdk-macOS";
-			targetProxy = 27DD6060219F680C00C202BD /* PBXContainerItemProxy */;
-		};
 		27DD6068219F687600C202BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = stellarsdk;
 			targetProxy = 27DD6067219F687600C202BD /* PBXContainerItemProxy */;
+		};
+		27F0893121A0C9F1007F1DCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "stellarsdk-macOS";
+			targetProxy = 27F0893021A0C9F1007F1DCF /* PBXContainerItemProxy */;
+		};
+		27F0893921A0CAF7007F1DCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = stellarsdk;
+			targetProxy = 27F0893821A0CAF7007F1DCF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -602,6 +606,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27F0892621A0C568007F1DCF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27F0892721A0C568007F1DCF /* Model.xcdatamodel */,
+			);
+			currentVersion = 27F0892721A0C568007F1DCF /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1F66D5B021768EB60071E67C /* Project object */;
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class PayViewController: UIViewController {
-    
+
     @IBOutlet weak var AmountToPay: UILabel!
     
     //Number buttons have a tag number+1, 1 == 2, 0 == 1
