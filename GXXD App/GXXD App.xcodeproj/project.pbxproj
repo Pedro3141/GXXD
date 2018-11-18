@@ -19,79 +19,66 @@
 		1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */; };
 		1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCD0217D888100850682 /* MyQRViewController.swift */; };
 		275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */; };
-		27F0892821A0C568007F1DCF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27F0892621A0C568007F1DCF /* Model.xcdatamodeld */; };
-		27F0893621A0CAF7007F1DCF /* stellarsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DD603D219F658E00C202BD /* stellarsdk.framework */; };
-		27F0893721A0CAF7007F1DCF /* stellarsdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DD603D219F658E00C202BD /* stellarsdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74B270BA218CD33D0056EEBA /* Klavika Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270B9218CD33D0056EEBA /* Klavika Light.otf */; };
 		74B270BC218CD34A0056EEBA /* DINPro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BB218CD34A0056EEBA /* DINPro Medium.otf */; };
 		74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BD218CD3520056EEBA /* DINPro Bold.otf */; };
+		74E2A51B21A0CF3D00A2FE0B /* SaveData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74E2A51921A0CF3D00A2FE0B /* SaveData.xcdatamodeld */; };
+		74E2A53521A0CFA300A2FE0B /* stellarsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */; };
+		74E2A53621A0CFA300A2FE0B /* stellarsdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74E2A53A21A0D00600A2FE0B /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2A53921A0D00600A2FE0B /* PersistenceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		27DD603C219F658E00C202BD /* PBXContainerItemProxy */ = {
+		74E2A52521A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7445E9FC201B106500470E0A;
 			remoteInfo = stellarsdk;
 		};
-		27DD603E219F658E00C202BD /* PBXContainerItemProxy */ = {
+		74E2A52721A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7445EA05201B106500470E0A;
 			remoteInfo = stellarsdkTests;
 		};
-		27DD6040219F658E00C202BD /* PBXContainerItemProxy */ = {
+		74E2A52921A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF4E5201F130100713DE7;
 			remoteInfo = "stellarsdk-macOS";
 		};
-		27DD6042219F658E00C202BD /* PBXContainerItemProxy */ = {
+		74E2A52B21A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF4ED201F130200713DE7;
 			remoteInfo = "stellarsdk-macOSTests";
 		};
-		27DD6044219F658E00C202BD /* PBXContainerItemProxy */ = {
+		74E2A52D21A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF50A201F458400713DE7;
 			remoteInfo = "stellarsdkTests-Host";
 		};
-		27DD6046219F658E00C202BD /* PBXContainerItemProxy */ = {
+		74E2A52F21A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF51D201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostTests";
 		};
-		27DD6048219F658E00C202BD /* PBXContainerItemProxy */ = {
+		74E2A53121A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF528201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostUITests";
 		};
-		27DD6067219F687600C202BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7445E9FB201B106500470E0A;
-			remoteInfo = stellarsdk;
-		};
-		27F0893021A0C9F1007F1DCF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 743DF4E4201F130100713DE7;
-			remoteInfo = "stellarsdk-macOS";
-		};
-		27F0893821A0CAF7007F1DCF /* PBXContainerItemProxy */ = {
+		74E2A53721A0CFA300A2FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 			proxyType = 1;
@@ -107,7 +94,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				27F0893721A0CAF7007F1DCF /* stellarsdk.framework in Embed Frameworks */,
+				74E2A53621A0CFA300A2FE0B /* stellarsdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,11 +118,12 @@
 		275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXXD App-Bridging-Header.h"; sourceTree = "<group>"; };
 		275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../stellar-ios-mac-sdk/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
-		27F0892721A0C568007F1DCF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../../Downloads/stellar-ios-mac-sdk/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
 		74B270B9218CD33D0056EEBA /* Klavika Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Klavika Light.otf"; sourceTree = "<group>"; };
 		74B270BB218CD34A0056EEBA /* DINPro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Medium.otf"; sourceTree = "<group>"; };
 		74B270BD218CD3520056EEBA /* DINPro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Bold.otf"; sourceTree = "<group>"; };
+		74E2A51A21A0CF3D00A2FE0B /* SaveData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaveData.xcdatamodel; sourceTree = "<group>"; };
+		74E2A53921A0D00600A2FE0B /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F0893621A0CAF7007F1DCF /* stellarsdk.framework in Frameworks */,
+				74E2A53521A0CFA300A2FE0B /* stellarsdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				1F66D5BB21768EB60071E67C /* AppDelegate.swift */,
-				27F0892621A0C568007F1DCF /* Model.xcdatamodeld */,
 				1F66D5BD21768EB60071E67C /* HomeViewController.swift */,
 				1FA684E3217AC937005455D6 /* PayViewContoller.swift */,
 				1FA684E5217AD1D5005455D6 /* RequestViewController.swift */,
@@ -196,22 +183,10 @@
 				1F3D83E921924329002FC82C /* AboutViewController.swift */,
 				1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */,
 				1FEBFCD0217D888100850682 /* MyQRViewController.swift */,
+				74E2A53921A0D00600A2FE0B /* PersistenceService.swift */,
+				74E2A51921A0CF3D00A2FE0B /* SaveData.xcdatamodeld */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		27DD6033219F658E00C202BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				27DD603D219F658E00C202BD /* stellarsdk.framework */,
-				27DD603F219F658E00C202BD /* stellarsdkTests.xctest */,
-				27DD6041219F658E00C202BD /* stellarsdk.framework */,
-				27DD6043219F658E00C202BD /* stellarsdk-macOSTests.xctest */,
-				27DD6045219F658E00C202BD /* stellarsdkTests-Host.app */,
-				27DD6047219F658E00C202BD /* stellarsdkTests-HostTests.xctest */,
-				27DD6049219F658E00C202BD /* stellarsdkTests-HostUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		27DD6057219F67E000C202BD /* Frameworks */ = {
@@ -231,6 +206,20 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		74E2A51C21A0CF5400A2FE0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */,
+				74E2A52821A0CF5400A2FE0B /* stellarsdkTests.xctest */,
+				74E2A52A21A0CF5400A2FE0B /* stellarsdk.framework */,
+				74E2A52C21A0CF5400A2FE0B /* stellarsdk-macOSTests.xctest */,
+				74E2A52E21A0CF5400A2FE0B /* stellarsdkTests-Host.app */,
+				74E2A53021A0CF5400A2FE0B /* stellarsdkTests-HostTests.xctest */,
+				74E2A53221A0CF5400A2FE0B /* stellarsdkTests-HostUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,9 +235,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				27DD6068219F687600C202BD /* PBXTargetDependency */,
-				27F0893121A0C9F1007F1DCF /* PBXTargetDependency */,
-				27F0893921A0CAF7007F1DCF /* PBXTargetDependency */,
+				74E2A53821A0CFA300A2FE0B /* PBXTargetDependency */,
 			);
 			name = "GXXD App";
 			productName = "GXXD App";
@@ -284,7 +271,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 27DD6033219F658E00C202BD /* Products */;
+					ProductGroup = 74E2A51C21A0CF5400A2FE0B /* Products */;
 					ProjectRef = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
 				},
 			);
@@ -296,53 +283,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		27DD603D219F658E00C202BD /* stellarsdk.framework */ = {
+		74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = stellarsdk.framework;
-			remoteRef = 27DD603C219F658E00C202BD /* PBXContainerItemProxy */;
+			remoteRef = 74E2A52521A0CF5400A2FE0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DD603F219F658E00C202BD /* stellarsdkTests.xctest */ = {
+		74E2A52821A0CF5400A2FE0B /* stellarsdkTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = stellarsdkTests.xctest;
-			remoteRef = 27DD603E219F658E00C202BD /* PBXContainerItemProxy */;
+			remoteRef = 74E2A52721A0CF5400A2FE0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DD6041219F658E00C202BD /* stellarsdk.framework */ = {
+		74E2A52A21A0CF5400A2FE0B /* stellarsdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = stellarsdk.framework;
-			remoteRef = 27DD6040219F658E00C202BD /* PBXContainerItemProxy */;
+			remoteRef = 74E2A52921A0CF5400A2FE0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DD6043219F658E00C202BD /* stellarsdk-macOSTests.xctest */ = {
+		74E2A52C21A0CF5400A2FE0B /* stellarsdk-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdk-macOSTests.xctest";
-			remoteRef = 27DD6042219F658E00C202BD /* PBXContainerItemProxy */;
+			remoteRef = 74E2A52B21A0CF5400A2FE0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DD6045219F658E00C202BD /* stellarsdkTests-Host.app */ = {
+		74E2A52E21A0CF5400A2FE0B /* stellarsdkTests-Host.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "stellarsdkTests-Host.app";
-			remoteRef = 27DD6044219F658E00C202BD /* PBXContainerItemProxy */;
+			remoteRef = 74E2A52D21A0CF5400A2FE0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DD6047219F658E00C202BD /* stellarsdkTests-HostTests.xctest */ = {
+		74E2A53021A0CF5400A2FE0B /* stellarsdkTests-HostTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdkTests-HostTests.xctest";
-			remoteRef = 27DD6046219F658E00C202BD /* PBXContainerItemProxy */;
+			remoteRef = 74E2A52F21A0CF5400A2FE0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DD6049219F658E00C202BD /* stellarsdkTests-HostUITests.xctest */ = {
+		74E2A53221A0CF5400A2FE0B /* stellarsdkTests-HostUITests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdkTests-HostUITests.xctest";
-			remoteRef = 27DD6048219F658E00C202BD /* PBXContainerItemProxy */;
+			remoteRef = 74E2A53121A0CF5400A2FE0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -371,11 +358,12 @@
 				1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */,
 				1FA684E6217AD1D5005455D6 /* RequestViewController.swift in Sources */,
 				1FA684E4217AC937005455D6 /* PayViewContoller.swift in Sources */,
+				74E2A53A21A0D00600A2FE0B /* PersistenceService.swift in Sources */,
 				1F3D83EA21924329002FC82C /* AboutViewController.swift in Sources */,
+				74E2A51B21A0CF3D00A2FE0B /* SaveData.xcdatamodeld in Sources */,
 				275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */,
 				1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */,
 				1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */,
-				27F0892821A0C568007F1DCF /* Model.xcdatamodeld in Sources */,
 				1F66D5BE21768EB60071E67C /* HomeViewController.swift in Sources */,
 				1F66D5BC21768EB60071E67C /* AppDelegate.swift in Sources */,
 			);
@@ -384,20 +372,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27DD6068219F687600C202BD /* PBXTargetDependency */ = {
+		74E2A53821A0CFA300A2FE0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = stellarsdk;
-			targetProxy = 27DD6067219F687600C202BD /* PBXContainerItemProxy */;
-		};
-		27F0893121A0C9F1007F1DCF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "stellarsdk-macOS";
-			targetProxy = 27F0893021A0C9F1007F1DCF /* PBXContainerItemProxy */;
-		};
-		27F0893921A0CAF7007F1DCF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = stellarsdk;
-			targetProxy = 27F0893821A0CAF7007F1DCF /* PBXContainerItemProxy */;
+			targetProxy = 74E2A53721A0CFA300A2FE0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,13 +523,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M98NPPW3ZC;
+				DEVELOPMENT_TEAM = 6WG9Z427H3;
 				INFOPLIST_FILE = "GXXD App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testv3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GXXD App/GXXD App-Bridging-Header.h";
@@ -569,13 +547,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M98NPPW3ZC;
+				DEVELOPMENT_TEAM = 6WG9Z427H3;
 				INFOPLIST_FILE = "GXXD App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testv3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GXXD App/GXXD App-Bridging-Header.h";
@@ -608,13 +586,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		27F0892621A0C568007F1DCF /* Model.xcdatamodeld */ = {
+		74E2A51921A0CF3D00A2FE0B /* SaveData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				27F0892721A0C568007F1DCF /* Model.xcdatamodel */,
+				74E2A51A21A0CF3D00A2FE0B /* SaveData.xcdatamodel */,
 			);
-			currentVersion = 27F0892721A0C568007F1DCF /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = 74E2A51A21A0CF3D00A2FE0B /* SaveData.xcdatamodel */;
+			path = SaveData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

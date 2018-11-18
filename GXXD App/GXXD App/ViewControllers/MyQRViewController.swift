@@ -29,14 +29,13 @@ class MyQRViewController: UIViewController{
     
     @IBAction func MyQR2Home(_ sender: Any) {
         self.performSegue(withIdentifier: "MyQR2HomeSegue", sender: self)
-        GenerateQR()
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //GenerateQR()
+        GenerateQR()
     }
     
     
