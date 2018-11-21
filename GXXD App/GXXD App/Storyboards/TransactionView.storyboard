@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--TransactionViewController-->
+        <scene sceneID="SgF-Zk-Dx2">
+            <objects>
+                <viewController storyboardIdentifier="TransactionViewController" title="TransactionViewController" id="UwU-C5-VJd" customClass="TransactionViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Wn-0a-0jH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-mc-gmZ">
+                                <rect key="frame" x="21" y="25" width="38" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Transaction2Home:" destination="UwU-C5-VJd" eventType="touchUpInside" id="HHq-ji-fVx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1PH-OD-T3H"/>
+                    </view>
+                    <connections>
+                        <segue destination="7SW-op-xzi" kind="showDetail" identifier="Transaction2HomeSegue" id="6aC-rb-NCJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLW-6E-JnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="184"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="VU7-Ix-0Op">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="7SW-op-xzi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qG9-T8-3nk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="49"/>
+        </scene>
+    </scenes>
+</document>
