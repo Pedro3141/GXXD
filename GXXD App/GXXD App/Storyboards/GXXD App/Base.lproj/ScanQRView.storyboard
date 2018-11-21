@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,7 +19,7 @@
             <objects>
                 <viewController storyboardIdentifier="ScanQRViewController" id="vCn-lX-nKH" customClass="ScanQRViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ScanQRViewController" id="QH7-u0-tiK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yp-C4-Zcv">
@@ -30,10 +33,6 @@
                                     <action selector="ScanQR2Home:" destination="vCn-lX-nKH" eventType="touchUpInside" id="Vis-Vr-K4X"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="FKJ-ol-eiy">
-                                <rect key="frame" x="136" y="0.0" width="103" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HNV-bO-Tpy">
                                 <rect key="frame" x="27.5" y="173.5" width="320" height="320"/>
                                 <constraints>
@@ -42,7 +41,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HNV-bO-Tpy" firstAttribute="centerY" secondItem="QH7-u0-tiK" secondAttribute="centerY" id="3mA-Mc-Zpa"/>
                             <constraint firstItem="HNV-bO-Tpy" firstAttribute="centerX" secondItem="QH7-u0-tiK" secondAttribute="centerX" id="8dY-0O-zrN"/>
@@ -50,13 +49,14 @@
                         <viewLayoutGuide key="safeArea" id="XYq-c3-cFM"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="4Yp-C4-Zcv" id="18H-e0-Rg9"/>
                         <outlet property="square" destination="HNV-bO-Tpy" id="Rer-Nm-riN"/>
                         <segue destination="ovn-2O-tZ0" kind="show" identifier="ScanQR2HomeSegue" id="TfN-se-LC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Um-Yk-waM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2988" y="830"/>
+            <point key="canvasLocation" x="-2988" y="829.83508245877067"/>
         </scene>
         <!--UIViewController-YWB-oT-DiL-->
         <scene sceneID="jUg-US-sTb">
@@ -67,7 +67,4 @@
             <point key="canvasLocation" x="-4377" y="-654"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="GxxdPay01" width="1024" height="1024"/>
-    </resources>
 </document>
