@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YWB-oT-DiL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro Bold.otf">
+            <string>DINPro-Bold</string>
+        </array>
+        <array key="DINPro Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SendR View Controller-->
+        <scene sceneID="gvs-W6-ObS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRu-eH-3gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="SendRViewController" id="eiL-LF-I6q" customClass="SendRViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SendRViewController" id="55E-Vs-heK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="SendRequest2HomeButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj4-s4-L8b">
+                                <rect key="frame" x="21" y="19" width="38" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendR2Home:" destination="eiL-LF-I6q" eventType="touchUpInside" id="f3m-XT-2zS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="FbQ-6B-I66">
+                                <rect key="frame" x="136" y="0.0" width="103" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEND OR REQUEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-d4-JL7">
+                                <rect key="frame" x="111" y="96" width="148" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZcZ-FA-6M3"/>
+                    </view>
+                    <connections>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="SendR2HomeSegue" id="IX5-Bg-q1i"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1289" y="830"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="vTI-v8-eb0">
+            <objects>
+                <viewController title="Profile View Controller" id="TSO-oI-WJX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vtn-MW-dpW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-Pj-ThW">
+                                <rect key="frame" x="136" y="0.0" width="103" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwC-yn-1Du">
+                                <rect key="frame" x="21" y="25" width="38" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YWB-oT-DiL" kind="show" identifier="Profile2SideSegue" id="YZX-UC-TbB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ohv-K0-ZGh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ue-Xh-Iga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5650" y="72"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="HGM-Gx-7vW">
+            <objects>
+                <viewController title="About View Controller" id="Xfu-j1-5r8" customClass="AboutViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dge-Kd-1xC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="b8x-VM-qpk">
+                                <rect key="frame" x="136" y="0.0" width="103" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bTs-QF-8Ss">
+                                <rect key="frame" x="67" y="117" width="240" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">GXXD Pay is a revolutionary blockchain-powered payments solution. Secure, frictionless, and rewarding with 0% transaction fees for merchants and Peer-2-Peer payments. CRM and social components are built in, with micro-donations from every transaction going to charity.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFL-zI-n2a">
+                                <rect key="frame" x="148" y="70" width="79" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIJ-su-fBh">
+                                <rect key="frame" x="21" y="25" width="38" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YWB-oT-DiL" kind="show" identifier="About2SideSegue" id="zKh-4I-897"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fwu-m4-uC8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKX-0H-hU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5650.3999999999996" y="801.94902548725645"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="qYI-bc-kPs">
+            <objects>
+                <viewController title="Social View Controller" id="9U0-bb-bHf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tye-kk-fJu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="6ih-xI-ot3">
+                                <rect key="frame" x="136" y="0.0" width="103" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipg-pd-c0J">
+                                <rect key="frame" x="21" y="25" width="38" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YWB-oT-DiL" kind="show" identifier="SocialSideSegue" id="hAY-Ac-hVA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fn4-13-bVh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJE-sH-ClW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5650" y="-654"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="Zn3-rh-ei9">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-YWB-oT-DiL" id="YWB-oT-DiL" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eD3-GK-ZsC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Is4-1x-Q3u"/>
+                    </view>
+                    <connections>
+                        <segue destination="PeG-I8-mAj" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="t2V-Z6-9L2"/>
+                        <segue destination="7fe-wA-30g" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="MeJ-Sa-k7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkx-QP-RUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4377" y="-654"/>
+        </scene>
+        <!--Side Bar View Controller-->
+        <scene sceneID="7Wh-b7-Vgg">
+            <objects>
+                <tableViewController title="Side Bar View Controller" id="PeG-I8-mAj" sceneMemberID="viewController">
+                    <tableView key="view" autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bSp-nr-CbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="8K5-jc-Rev">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43" id="p09-YV-ljq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p09-YV-ljq" id="Uj1-z5-aeR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="42.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testuser" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-Db-p5A">
+                                                    <rect key="frame" x="101" y="6" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aS-iy-loH">
+                                                    <rect key="frame" x="16" y="-2" width="78" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
+                                                    <state key="normal" title="Profile">
+                                                        <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="TSO-oI-WJX" kind="show" identifier="SideProfileSegue" id="waa-B0-7A6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pA1-Ra-es3">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pA1-Ra-es3" id="qWv-ep-GNy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p72-Ud-8lE">
+                                                    <rect key="frame" x="16" y="-2" width="69" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
+                                                    <state key="normal" title="Home">
+                                                        <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jWm-hl-GBj">
+                                        <rect key="frame" x="0.0" y="87" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jWm-hl-GBj" id="Yke-MY-jEU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-dj-t3h">
+                                                    <rect key="frame" x="16" y="-3" width="69" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
+                                                    <state key="normal" title="About">
+                                                        <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="Xfu-j1-5r8" kind="show" identifier="SideAboutSegue" id="vfo-du-DIi"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="r60-sU-vao">
+                                        <rect key="frame" x="0.0" y="131" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r60-sU-vao" id="zri-fG-NiK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUX-gc-Iwu">
+                                                    <rect key="frame" x="16" y="-2" width="71" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="26"/>
+                                                    <state key="normal" title="Social">
+                                                        <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="9U0-bb-bHf" kind="show" identifier="SideSocialSegue" id="zPS-Pa-5oI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="PeG-I8-mAj" id="aL0-pf-BLA"/>
+                            <outlet property="delegate" destination="PeG-I8-mAj" id="Qfn-Zv-Xpn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Evc-fm-t1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4791.1999999999998" y="71.514242878560722"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-Rw-Jwl">
+                                <rect key="frame" x="58" y="417" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QNe-dg-JnT"/>
+                                    <constraint firstAttribute="width" constant="100" id="a0h-vs-JCS"/>
+                                    <constraint firstAttribute="width" secondItem="tyn-Rw-Jwl" secondAttribute="height" multiplier="1:1" id="hzd-Mp-nfb"/>
+                                    <constraint firstAttribute="height" constant="100" id="k3g-5h-LS6"/>
+                                </constraints>
+                                <state key="normal" title="SCAN QR" image="ScanQR01"/>
+                                <connections>
+                                    <action selector="ScanQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rj2-I1-X9L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-9o-Lg1">
+                                <rect key="frame" x="52" y="563" width="271" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SEND OR REQUEST MONEY">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendRequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caq-ZS-Wvj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgE-fs-NN5">
+                                <rect key="frame" x="73" y="505" width="70" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Sn6-Yc-8rs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="m0X-Ca-dGb">
+                                <rect key="frame" x="136" y="50" width="103" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Rm2-zP-c82"/>
+                                    <constraint firstAttribute="width" constant="103" id="dq5-bI-1Se"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-95-Jpo">
+                                <rect key="frame" x="140.5" y="117" width="94" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="BO8-d4-HOC"/>
+                                    <constraint firstAttribute="width" secondItem="UV6-95-Jpo" secondAttribute="height" multiplier="47:17" id="Bgg-Nz-3ZA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="tQo-l6-Kv3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="ADD MONEY">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTX-NP-5KM">
+                                <rect key="frame" x="114" y="254" width="147" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rTX-NP-5KM" secondAttribute="height" multiplier="147:20" id="DRr-2z-RuB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="147" id="znb-Ih-lAY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2X-Hd-Ks9">
+                                <rect key="frame" x="124" y="124" width="20" height="20"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Transaction " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-t0-zek">
+                                <rect key="frame" x="121.5" y="296" width="132" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Msr-t0-zek" secondAttribute="height" multiplier="6:1" id="ThS-e5-Uvc"/>
+                                    <constraint firstAttribute="height" constant="22" id="deY-Ak-v1i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="lg0-6i-xAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="17"/>
+                                <color key="textColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-TP-5an">
+                                <rect key="frame" x="88.5" y="387" width="39" height="41"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
+                                <state key="normal" title="PAY">
+                                    <color key="titleColor" red="0.0" green="0.76470588235294112" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="PayViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FnG-H7-b9N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mef-5o-c0I">
+                                <rect key="frame" x="242" y="503" width="50" height="20"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-vv-y0J">
+                                <rect key="frame" x="219" y="387" width="96" height="41"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
+                                <state key="normal" title="REQUEST">
+                                    <color key="titleColor" red="0.0" green="0.76470588235294112" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUR-IX-HC6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taU-aB-bgG">
+                                <rect key="frame" x="129" y="146" width="117" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qK4-Mx-I2M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-TG-l2K">
+                                <rect key="frame" x="217" y="417" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bA9-2W-0Zg"/>
+                                    <constraint firstAttribute="height" constant="100" id="gEg-S8-Ns8"/>
+                                    <constraint firstAttribute="width" secondItem="qYG-TG-l2K" secondAttribute="height" multiplier="1:1" id="rEb-Br-kX8"/>
+                                    <constraint firstAttribute="height" constant="100" id="uU6-Yq-SSe"/>
+                                </constraints>
+                                <state key="normal" title="MY QR" image="MyQR01"/>
+                                <connections>
+                                    <action selector="MyQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYL-N9-WnW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Ov-vv-y0J" firstAttribute="top" secondItem="Msr-t0-zek" secondAttribute="bottom" constant="69" id="0WR-WQ-3qN"/>
+                            <constraint firstItem="Mef-5o-c0I" firstAttribute="centerX" secondItem="qYG-TG-l2K" secondAttribute="centerX" id="1GX-A8-uQ8"/>
+                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="centerX" secondItem="qgE-fs-NN5" secondAttribute="centerX" id="2a3-Oa-Lhg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qYG-TG-l2K" secondAttribute="trailing" constant="58" id="5Xe-53-dxh"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="width" secondItem="tyn-Rw-Jwl" secondAttribute="width" id="755-WW-E4Y"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="leading" secondItem="tyn-Rw-Jwl" secondAttribute="trailing" constant="59" id="A69-lY-SFE"/>
+                            <constraint firstItem="rTX-NP-5KM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="CEF-1i-0bB"/>
+                            <constraint firstItem="taU-aB-bgG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="146" id="CPV-f5-vx3"/>
+                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="centerX" secondItem="IhC-TP-5an" secondAttribute="centerX" id="D6n-6x-ZPg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2X-Hd-Ks9" secondAttribute="trailing" constant="231" id="Fun-MG-rPa"/>
+                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="centerX" secondItem="rTX-NP-5KM" secondAttribute="centerX" id="HFn-Q4-K2M"/>
+                            <constraint firstItem="taU-aB-bgG" firstAttribute="centerX" secondItem="rTX-NP-5KM" secondAttribute="centerX" id="K2P-KR-o1Z"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="top" secondItem="tyn-Rw-Jwl" secondAttribute="top" id="KFw-SG-E9h"/>
+                            <constraint firstItem="UV6-95-Jpo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="Kse-o5-9OM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UV6-95-Jpo" secondAttribute="trailing" constant="140.5" id="LYC-90-Vj4"/>
+                            <constraint firstItem="rTX-NP-5KM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N0X-7S-qbp"/>
+                            <constraint firstAttribute="bottom" secondItem="qgE-fs-NN5" secondAttribute="bottom" constant="142" id="N9c-si-cTG"/>
+                            <constraint firstItem="qgE-fs-NN5" firstAttribute="top" secondItem="IhC-TP-5an" secondAttribute="bottom" constant="77" id="P8e-St-XhC"/>
+                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="Q1n-U6-JSC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Msr-t0-zek" secondAttribute="trailing" constant="121.5" id="R8m-jE-rib"/>
+                            <constraint firstItem="IhC-TP-5an" firstAttribute="baseline" secondItem="6Ov-vv-y0J" secondAttribute="baseline" id="RyJ-z4-h0J"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="centerX" secondItem="6Ov-vv-y0J" secondAttribute="centerX" id="ShG-NU-2fe"/>
+                            <constraint firstItem="rTX-NP-5KM" firstAttribute="top" secondItem="taU-aB-bgG" secondAttribute="bottom" constant="8" symbolic="YES" id="Zgj-Xr-5Lv"/>
+                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="centerY" secondItem="UV6-95-Jpo" secondAttribute="centerY" id="Zwb-Vo-Rhl"/>
+                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="qgE-fs-NN5" secondAttribute="bottom" constant="38" id="aEd-ri-qaC"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="width" secondItem="tyn-Rw-Jwl" secondAttribute="height" multiplier="1:1" id="aYi-XB-aVL"/>
+                            <constraint firstItem="m0X-Ca-dGb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bnt-wG-4pV"/>
+                            <constraint firstItem="taU-aB-bgG" firstAttribute="top" secondItem="m0X-Ca-dGb" secondAttribute="bottom" constant="8" symbolic="YES" id="dS3-ol-cVS"/>
+                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="dzQ-O0-wa0"/>
+                            <constraint firstItem="UV6-95-Jpo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hEL-hS-9kx"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="height" secondItem="tyn-Rw-Jwl" secondAttribute="height" id="lnF-5i-Yrb"/>
+                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="353" id="mxx-cG-vaU"/>
+                            <constraint firstItem="Mef-5o-c0I" firstAttribute="firstBaseline" secondItem="qgE-fs-NN5" secondAttribute="baseline" id="niT-9o-u6N"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="353" id="pa4-hK-iWu"/>
+                            <constraint firstItem="qYG-TG-l2K" firstAttribute="centerY" secondItem="tyn-Rw-Jwl" secondAttribute="centerY" id="sBC-D3-eQY"/>
+                            <constraint firstItem="taU-aB-bgG" firstAttribute="top" secondItem="A2X-Hd-Ks9" secondAttribute="bottom" constant="2" id="tw6-nb-mfN"/>
+                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="Mef-5o-c0I" secondAttribute="bottom" constant="40" id="twH-1r-Pie"/>
+                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="qYG-TG-l2K" secondAttribute="bottom" constant="46" id="uvu-dd-S4g"/>
+                            <constraint firstItem="Msr-t0-zek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydb-dD-VXr"/>
+                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="zme-Mj-fbF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" userLabel="SafeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="faj-nr-KVO">
+                        <barButtonItem key="leftBarButtonItem" title="sideButton" image="ham" width="4" springLoaded="YES" id="WP2-0v-HJl">
+                            <inset key="imageInsets" minX="-125" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" red="0.0" green="0.76470588235294112" blue="0.86328125" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="WP2-0v-HJl" id="gGv-E4-rIS"/>
+                        <segue destination="nsE-Kf-YXF" kind="showDetail" identifier="PayViewSegue" id="dKl-LP-fYM"/>
+                        <segue destination="Yeq-b6-OhB" kind="showDetail" identifier="RequestViewSegue" id="YyK-df-n2T"/>
+                        <segue destination="eiL-LF-I6q" kind="showDetail" identifier="SendRViewSegue" id="gCc-bg-XJO"/>
+                        <segue destination="vCn-lX-nKH" kind="showDetail" identifier="ScanQRSegue" id="l8T-c0-HEq"/>
+                        <segue destination="KBi-DK-zeo" kind="showDetail" identifier="MyQRViewSegue" id="VbT-6B-MAA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2989.5999999999999" y="70.614692653673174"/>
+        </scene>
+        <!--ScanQR View Controller-->
+        <scene sceneID="Svz-Q1-z81">
+            <objects>
+                <viewController storyboardIdentifier="ScanQRViewController" id="vCn-lX-nKH" customClass="ScanQRViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ScanQRViewController" id="QH7-u0-tiK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yp-C4-Zcv">
+                                <rect key="frame" x="22" y="20" width="38" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ScanQR2Home:" destination="vCn-lX-nKH" eventType="touchUpInside" id="Vis-Vr-K4X"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="FKJ-ol-eiy">
+                                <rect key="frame" x="136" y="0.0" width="103" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HNV-bO-Tpy">
+                                <rect key="frame" x="27.5" y="173.5" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="MrU-2S-n9a"/>
+                                    <constraint firstAttribute="height" constant="320" id="Z8A-EE-vu9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HNV-bO-Tpy" firstAttribute="centerY" secondItem="QH7-u0-tiK" secondAttribute="centerY" id="3mA-Mc-Zpa"/>
+                            <constraint firstItem="HNV-bO-Tpy" firstAttribute="centerX" secondItem="QH7-u0-tiK" secondAttribute="centerX" id="8dY-0O-zrN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XYq-c3-cFM"/>
+                    </view>
+                    <connections>
+                        <outlet property="square" destination="HNV-bO-Tpy" id="Rer-Nm-riN"/>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="ScanQR2HomeSegue" id="TfN-se-LC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Um-Yk-waM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2988" y="830"/>
+        </scene>
+        <!--MyQR View Controller-->
+        <scene sceneID="KKT-uK-W4C">
+            <objects>
+                <viewController storyboardIdentifier="MyQRViewController" id="KBi-DK-zeo" customClass="MyQRViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Our-5a-4K8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MyQR2Home" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v0-eg-vu9">
+                                <rect key="frame" x="21" y="19" width="38" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="MyQR2Home:" destination="KBi-DK-zeo" eventType="touchUpInside" id="qTR-0e-xmP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="N2s-Ae-pGY">
+                                <rect key="frame" x="136" y="0.0" width="103" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2zH-py-qyr">
+                                <rect key="frame" x="97" y="155" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testuser" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-5Z-Ldp">
+                                <rect key="frame" x="21" y="84" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCF-9D-cTl">
+                                <rect key="frame" x="104" y="96" width="46" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sacramento, California" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdc-4O-Bcw">
+                                <rect key="frame" x="104" y="126" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR to send payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8D-ui-Q0d">
+                                <rect key="frame" x="87" y="343" width="209" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="t8k-H1-Snm"/>
+                    </view>
+                    <connections>
+                        <outlet property="QRCodeContainer" destination="2zH-py-qyr" id="HXK-z9-Awq"/>
+                        <segue destination="YWB-oT-DiL" kind="show" identifier="MyQR2HomeSegue" id="wwQ-qy-ddZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6W-qX-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2140" y="830"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CKr-RO-ReA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7fe-wA-30g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xFW-pF-EGn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="C9Q-6L-2hB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3n7-3F-jln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3927.1999999999998" y="71.514242878560722"/>
+        </scene>
+        <!--PayViewController-->
+        <scene sceneID="ZWq-eP-hyH">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PayViewController" storyboardName="PayView" referencedIdentifier="PayViewController" id="nsE-Kf-YXF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9N-au-D4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2291" y="-161"/>
+        </scene>
+        <!--RequestViewContoller-->
+        <scene sceneID="XnV-Qf-ML4">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RequestViewContoller" storyboardName="RequestView" referencedIdentifier="RequestViewContoller" id="Yeq-b6-OhB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utu-Ms-wwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1310" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GxxdPay01" width="1024" height="1024"/>
+        <image name="MyQR01" width="1024" height="1024"/>
+        <image name="ScanQR01" width="1024" height="1024"/>
+        <image name="ham" width="512" height="512"/>
+        <image name="testuser" width="40" height="40"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="IX5-Bg-q1i"/>
+    </inferredMetricsTieBreakers>
+</document>

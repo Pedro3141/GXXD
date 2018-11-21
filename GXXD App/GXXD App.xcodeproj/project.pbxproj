@@ -18,69 +18,75 @@
 		1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA684E7217AD80E005455D6 /* SendRViewController.swift */; };
 		1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */; };
 		1FEBFCD1217D888100850682 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFCD0217D888100850682 /* MyQRViewController.swift */; };
+		2711F84D21A2277900CE46AB /* stellarsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2711F84021A2276300CE46AB /* stellarsdk.framework */; };
+		2711F84E21A2277900CE46AB /* stellarsdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2711F84021A2276300CE46AB /* stellarsdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		275AE8E6218FCCAF008EADE1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */; };
+		27AEB07B21A5ED7D00549476 /* PayView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AEB07A21A5ED7D00549476 /* PayView.storyboard */; };
+		27AEB08621A5EE0600549476 /* RequestView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AEB08521A5EE0600549476 /* RequestView.storyboard */; };
+		27AEB08E21A5EF4200549476 /* SendOrRequestView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AEB08C21A5EF4200549476 /* SendOrRequestView.storyboard */; };
+		27AEB09021A5EF6E00549476 /* MyQRView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AEB08F21A5EF6E00549476 /* MyQRView.storyboard */; };
+		27AEB09321A5EF9300549476 /* ScanQRView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AEB09121A5EF9300549476 /* ScanQRView.storyboard */; };
+		27AEB09521A5EFBB00549476 /* SideBarView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AEB09421A5EFBB00549476 /* SideBarView.storyboard */; };
 		74B270BA218CD33D0056EEBA /* Klavika Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270B9218CD33D0056EEBA /* Klavika Light.otf */; };
 		74B270BC218CD34A0056EEBA /* DINPro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BB218CD34A0056EEBA /* DINPro Medium.otf */; };
 		74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BD218CD3520056EEBA /* DINPro Bold.otf */; };
 		74E2A51B21A0CF3D00A2FE0B /* SaveData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74E2A51921A0CF3D00A2FE0B /* SaveData.xcdatamodeld */; };
-		74E2A53521A0CFA300A2FE0B /* stellarsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */; };
-		74E2A53621A0CFA300A2FE0B /* stellarsdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74E2A53A21A0D00600A2FE0B /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2A53921A0D00600A2FE0B /* PersistenceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		74E2A52521A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
+		2711F83F21A2276300CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7445E9FC201B106500470E0A;
 			remoteInfo = stellarsdk;
 		};
-		74E2A52721A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
+		2711F84121A2276300CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7445EA05201B106500470E0A;
 			remoteInfo = stellarsdkTests;
 		};
-		74E2A52921A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
+		2711F84321A2276300CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF4E5201F130100713DE7;
 			remoteInfo = "stellarsdk-macOS";
 		};
-		74E2A52B21A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
+		2711F84521A2276300CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF4ED201F130200713DE7;
 			remoteInfo = "stellarsdk-macOSTests";
 		};
-		74E2A52D21A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
+		2711F84721A2276300CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF50A201F458400713DE7;
 			remoteInfo = "stellarsdkTests-Host";
 		};
-		74E2A52F21A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
+		2711F84921A2276300CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF51D201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostTests";
 		};
-		74E2A53121A0CF5400A2FE0B /* PBXContainerItemProxy */ = {
+		2711F84B21A2276300CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 743DF528201F458400713DE7;
 			remoteInfo = "stellarsdkTests-HostUITests";
 		};
-		74E2A53721A0CFA300A2FE0B /* PBXContainerItemProxy */ = {
+		2711F84F21A2277900CE46AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+			containerPortal = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 7445E9FB201B106500470E0A;
 			remoteInfo = stellarsdk;
@@ -88,13 +94,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		27F0893A21A0CAF7007F1DCF /* Embed Frameworks */ = {
+		2711F85121A2277900CE46AB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74E2A53621A0CFA300A2FE0B /* stellarsdk.framework in Embed Frameworks */,
+				2711F84E21A2277900CE46AB /* stellarsdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,10 +121,16 @@
 		1FA684E7217AD80E005455D6 /* SendRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		1FEBFCD0217D888100850682 /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../stellar-ios-mac-sdk/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
 		275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXXD App-Bridging-Header.h"; sourceTree = "<group>"; };
 		275AE8E4218FCCAF008EADE1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../../Downloads/stellar-ios-mac-sdk/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
+		27AEB07A21A5ED7D00549476 /* PayView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PayView.storyboard; sourceTree = "<group>"; };
+		27AEB08521A5EE0600549476 /* RequestView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RequestView.storyboard; sourceTree = "<group>"; };
+		27AEB08D21A5EF4200549476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "GXXD App/Base.lproj/SendOrRequestView.storyboard"; sourceTree = "<group>"; };
+		27AEB08F21A5EF6E00549476 /* MyQRView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyQRView.storyboard; sourceTree = "<group>"; };
+		27AEB09221A5EF9300549476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "GXXD App/Base.lproj/ScanQRView.storyboard"; sourceTree = "<group>"; };
+		27AEB09421A5EFBB00549476 /* SideBarView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideBarView.storyboard; sourceTree = "<group>"; };
 		74B270B9218CD33D0056EEBA /* Klavika Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Klavika Light.otf"; sourceTree = "<group>"; };
 		74B270BB218CD34A0056EEBA /* DINPro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Medium.otf"; sourceTree = "<group>"; };
 		74B270BD218CD3520056EEBA /* DINPro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Bold.otf"; sourceTree = "<group>"; };
@@ -131,7 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E2A53521A0CFA300A2FE0B /* stellarsdk.framework in Frameworks */,
+				2711F84D21A2277900CE46AB /* stellarsdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,11 +170,11 @@
 		1F66D5BA21768EB60071E67C /* GXXD App */ = {
 			isa = PBXGroup;
 			children = (
-				27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */,
+				2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */,
 				74B270B8218CD30F0056EEBA /* Fonts */,
 				2754EE90219F60F4008DE443 /* ViewControllers */,
-				1F66D5BF21768EB60071E67C /* Main.storyboard */,
-				1F66D5C421768EB90071E67C /* LaunchScreen.storyboard */,
+				27AEB09621A5EFDF00549476 /* Storyboards */,
+				74E2A51921A0CF3D00A2FE0B /* SaveData.xcdatamodeld */,
 				1F66D5C221768EB90071E67C /* Assets.xcassets */,
 				275AE8E5218FCCAF008EADE1 /* SWRevealViewController.h */,
 				275AE8E3218FCCAD008EADE1 /* GXXD App-Bridging-Header.h */,
@@ -170,6 +182,20 @@
 				1F66D5C721768EB90071E67C /* Info.plist */,
 			);
 			path = "GXXD App";
+			sourceTree = "<group>";
+		};
+		2711F83621A2276300CE46AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2711F84021A2276300CE46AB /* stellarsdk.framework */,
+				2711F84221A2276300CE46AB /* stellarsdkTests.xctest */,
+				2711F84421A2276300CE46AB /* stellarsdk.framework */,
+				2711F84621A2276300CE46AB /* stellarsdk-macOSTests.xctest */,
+				2711F84821A2276300CE46AB /* stellarsdkTests-Host.app */,
+				2711F84A21A2276300CE46AB /* stellarsdkTests-HostTests.xctest */,
+				2711F84C21A2276300CE46AB /* stellarsdkTests-HostUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2754EE90219F60F4008DE443 /* ViewControllers */ = {
@@ -184,9 +210,23 @@
 				1FEBFCCE217D807D00850682 /* ScanQRViewController.swift */,
 				1FEBFCD0217D888100850682 /* MyQRViewController.swift */,
 				74E2A53921A0D00600A2FE0B /* PersistenceService.swift */,
-				74E2A51921A0CF3D00A2FE0B /* SaveData.xcdatamodeld */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		27AEB09621A5EFDF00549476 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F66D5BF21768EB60071E67C /* Main.storyboard */,
+				27AEB07A21A5ED7D00549476 /* PayView.storyboard */,
+				27AEB08521A5EE0600549476 /* RequestView.storyboard */,
+				27AEB08C21A5EF4200549476 /* SendOrRequestView.storyboard */,
+				27AEB08F21A5EF6E00549476 /* MyQRView.storyboard */,
+				27AEB09121A5EF9300549476 /* ScanQRView.storyboard */,
+				27AEB09421A5EFBB00549476 /* SideBarView.storyboard */,
+				1F66D5C421768EB90071E67C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		27DD6057219F67E000C202BD /* Frameworks */ = {
@@ -206,20 +246,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		74E2A51C21A0CF5400A2FE0B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */,
-				74E2A52821A0CF5400A2FE0B /* stellarsdkTests.xctest */,
-				74E2A52A21A0CF5400A2FE0B /* stellarsdk.framework */,
-				74E2A52C21A0CF5400A2FE0B /* stellarsdk-macOSTests.xctest */,
-				74E2A52E21A0CF5400A2FE0B /* stellarsdkTests-Host.app */,
-				74E2A53021A0CF5400A2FE0B /* stellarsdkTests-HostTests.xctest */,
-				74E2A53221A0CF5400A2FE0B /* stellarsdkTests-HostUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,12 +256,12 @@
 				1F66D5B421768EB60071E67C /* Sources */,
 				1F66D5B521768EB60071E67C /* Frameworks */,
 				1F66D5B621768EB60071E67C /* Resources */,
-				27F0893A21A0CAF7007F1DCF /* Embed Frameworks */,
+				2711F85121A2277900CE46AB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				74E2A53821A0CFA300A2FE0B /* PBXTargetDependency */,
+				2711F85021A2277900CE46AB /* PBXTargetDependency */,
 			);
 			name = "GXXD App";
 			productName = "GXXD App";
@@ -271,8 +297,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 74E2A51C21A0CF5400A2FE0B /* Products */;
-					ProjectRef = 27DD6032219F658E00C202BD /* stellarsdk.xcodeproj */;
+					ProductGroup = 2711F83621A2276300CE46AB /* Products */;
+					ProjectRef = 2711F83521A2276300CE46AB /* stellarsdk.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -283,53 +309,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		74E2A52621A0CF5400A2FE0B /* stellarsdk.framework */ = {
+		2711F84021A2276300CE46AB /* stellarsdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = stellarsdk.framework;
-			remoteRef = 74E2A52521A0CF5400A2FE0B /* PBXContainerItemProxy */;
+			remoteRef = 2711F83F21A2276300CE46AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74E2A52821A0CF5400A2FE0B /* stellarsdkTests.xctest */ = {
+		2711F84221A2276300CE46AB /* stellarsdkTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = stellarsdkTests.xctest;
-			remoteRef = 74E2A52721A0CF5400A2FE0B /* PBXContainerItemProxy */;
+			remoteRef = 2711F84121A2276300CE46AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74E2A52A21A0CF5400A2FE0B /* stellarsdk.framework */ = {
+		2711F84421A2276300CE46AB /* stellarsdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = stellarsdk.framework;
-			remoteRef = 74E2A52921A0CF5400A2FE0B /* PBXContainerItemProxy */;
+			remoteRef = 2711F84321A2276300CE46AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74E2A52C21A0CF5400A2FE0B /* stellarsdk-macOSTests.xctest */ = {
+		2711F84621A2276300CE46AB /* stellarsdk-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdk-macOSTests.xctest";
-			remoteRef = 74E2A52B21A0CF5400A2FE0B /* PBXContainerItemProxy */;
+			remoteRef = 2711F84521A2276300CE46AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74E2A52E21A0CF5400A2FE0B /* stellarsdkTests-Host.app */ = {
+		2711F84821A2276300CE46AB /* stellarsdkTests-Host.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "stellarsdkTests-Host.app";
-			remoteRef = 74E2A52D21A0CF5400A2FE0B /* PBXContainerItemProxy */;
+			remoteRef = 2711F84721A2276300CE46AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74E2A53021A0CF5400A2FE0B /* stellarsdkTests-HostTests.xctest */ = {
+		2711F84A21A2276300CE46AB /* stellarsdkTests-HostTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdkTests-HostTests.xctest";
-			remoteRef = 74E2A52F21A0CF5400A2FE0B /* PBXContainerItemProxy */;
+			remoteRef = 2711F84921A2276300CE46AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74E2A53221A0CF5400A2FE0B /* stellarsdkTests-HostUITests.xctest */ = {
+		2711F84C21A2276300CE46AB /* stellarsdkTests-HostUITests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "stellarsdkTests-HostUITests.xctest";
-			remoteRef = 74E2A53121A0CF5400A2FE0B /* PBXContainerItemProxy */;
+			remoteRef = 2711F84B21A2276300CE46AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -339,12 +365,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AEB09021A5EF6E00549476 /* MyQRView.storyboard in Resources */,
 				1F66D5C621768EB90071E67C /* LaunchScreen.storyboard in Resources */,
+				27AEB08621A5EE0600549476 /* RequestView.storyboard in Resources */,
+				27AEB08E21A5EF4200549476 /* SendOrRequestView.storyboard in Resources */,
 				74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */,
+				27AEB09321A5EF9300549476 /* ScanQRView.storyboard in Resources */,
 				1F66D5C321768EB90071E67C /* Assets.xcassets in Resources */,
 				74B270BC218CD34A0056EEBA /* DINPro Medium.otf in Resources */,
 				1F66D5C121768EB60071E67C /* Main.storyboard in Resources */,
 				74B270BA218CD33D0056EEBA /* Klavika Light.otf in Resources */,
+				27AEB09521A5EFBB00549476 /* SideBarView.storyboard in Resources */,
+				27AEB07B21A5ED7D00549476 /* PayView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,10 +404,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		74E2A53821A0CFA300A2FE0B /* PBXTargetDependency */ = {
+		2711F85021A2277900CE46AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = stellarsdk;
-			targetProxy = 74E2A53721A0CFA300A2FE0B /* PBXContainerItemProxy */;
+			targetProxy = 2711F84F21A2277900CE46AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -394,6 +426,22 @@
 				1F66D5C521768EB90071E67C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		27AEB08C21A5EF4200549476 /* SendOrRequestView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27AEB08D21A5EF4200549476 /* Base */,
+			);
+			name = SendOrRequestView.storyboard;
+			sourceTree = "<group>";
+		};
+		27AEB09121A5EF9300549476 /* ScanQRView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27AEB09221A5EF9300549476 /* Base */,
+			);
+			name = ScanQRView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -523,13 +571,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6WG9Z427H3;
+				DEVELOPMENT_TEAM = M98NPPW3ZC;
 				INFOPLIST_FILE = "GXXD App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testv3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GXXD App/GXXD App-Bridging-Header.h";
@@ -547,13 +595,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6WG9Z427H3;
+				DEVELOPMENT_TEAM = M98NPPW3ZC;
 				INFOPLIST_FILE = "GXXD App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxxd.testv3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GXXD App/GXXD App-Bridging-Header.h";
