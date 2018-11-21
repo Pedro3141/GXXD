@@ -1,1 +1,1 @@
-# GXXDPAY
+# GXXD
