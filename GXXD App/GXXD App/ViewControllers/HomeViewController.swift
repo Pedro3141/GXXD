@@ -12,6 +12,10 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem! //button for side bar
     
+    @IBAction func TransactionViewPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "TransactionViewSegue", sender: self)
+    }
+    
     @IBAction func SendRequestViewPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "SendRViewSegue", sender: self)
     }

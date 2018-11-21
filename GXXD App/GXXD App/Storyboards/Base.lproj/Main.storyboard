@@ -112,17 +112,6 @@
                                 <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Transaction " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-t0-zek">
-                                <rect key="frame" x="121.5" y="296" width="132" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Msr-t0-zek" secondAttribute="height" multiplier="6:1" id="ThS-e5-Uvc"/>
-                                    <constraint firstAttribute="height" constant="22" id="deY-Ak-v1i"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="lg0-6i-xAU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="17"/>
-                                <color key="textColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-TP-5an">
                                 <rect key="frame" x="88.5" y="387" width="39" height="41"/>
                                 <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
@@ -181,10 +170,20 @@
                                     <action selector="MyQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYL-N9-WnW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-xc-aIA">
+                                <rect key="frame" x="124" y="282" width="128" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="17"/>
+                                <state key="normal" title="Last Transaction">
+                                    <color key="titleColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="TransactionViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwD-yd-w6M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Ov-vv-y0J" firstAttribute="top" secondItem="Msr-t0-zek" secondAttribute="bottom" constant="69" id="0WR-WQ-3qN"/>
                             <constraint firstItem="Mef-5o-c0I" firstAttribute="centerX" secondItem="qYG-TG-l2K" secondAttribute="centerX" id="1GX-A8-uQ8"/>
                             <constraint firstItem="tyn-Rw-Jwl" firstAttribute="centerX" secondItem="qgE-fs-NN5" secondAttribute="centerX" id="2a3-Oa-Lhg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qYG-TG-l2K" secondAttribute="trailing" constant="58" id="5Xe-53-dxh"/>
@@ -203,7 +202,6 @@
                             <constraint firstAttribute="bottom" secondItem="qgE-fs-NN5" secondAttribute="bottom" constant="142" id="N9c-si-cTG"/>
                             <constraint firstItem="qgE-fs-NN5" firstAttribute="top" secondItem="IhC-TP-5an" secondAttribute="bottom" constant="77" id="P8e-St-XhC"/>
                             <constraint firstItem="A2X-Hd-Ks9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="Q1n-U6-JSC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Msr-t0-zek" secondAttribute="trailing" constant="121.5" id="R8m-jE-rib"/>
                             <constraint firstItem="IhC-TP-5an" firstAttribute="baseline" secondItem="6Ov-vv-y0J" secondAttribute="baseline" id="RyJ-z4-h0J"/>
                             <constraint firstItem="qYG-TG-l2K" firstAttribute="centerX" secondItem="6Ov-vv-y0J" secondAttribute="centerX" id="ShG-NU-2fe"/>
                             <constraint firstItem="rTX-NP-5KM" firstAttribute="top" secondItem="taU-aB-bgG" secondAttribute="bottom" constant="8" symbolic="YES" id="Zgj-Xr-5Lv"/>
@@ -222,7 +220,6 @@
                             <constraint firstItem="taU-aB-bgG" firstAttribute="top" secondItem="A2X-Hd-Ks9" secondAttribute="bottom" constant="2" id="tw6-nb-mfN"/>
                             <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="Mef-5o-c0I" secondAttribute="bottom" constant="40" id="twH-1r-Pie"/>
                             <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="qYG-TG-l2K" secondAttribute="bottom" constant="46" id="uvu-dd-S4g"/>
-                            <constraint firstItem="Msr-t0-zek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydb-dD-VXr"/>
                             <constraint firstItem="X0y-9o-Lg1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="zme-Mj-fbF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" userLabel="SafeArea"/>
@@ -240,6 +237,7 @@
                         <segue destination="vAI-Gj-ZSQ" kind="showDetail" identifier="SendRViewSegue" id="gCc-bg-XJO"/>
                         <segue destination="aas-Nk-XPk" kind="showDetail" identifier="ScanQRSegue" id="l8T-c0-HEq"/>
                         <segue destination="VQ6-uU-oLv" kind="showDetail" identifier="MyQRViewSegue" id="VbT-6B-MAA"/>
+                        <segue destination="63l-Bg-Kz2" kind="showDetail" identifier="TransactionViewSegue" id="g84-Bf-dhr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -279,6 +277,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Utu-Ms-wwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2215" y="-87"/>
+        </scene>
+        <!--TransactionViewController-->
+        <scene sceneID="iZR-Tc-3iP">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TransactionViewController" storyboardName="TransactionView" referencedIdentifier="TransactionViewController" id="63l-Bg-Kz2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7e-0c-iUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2210" y="-9"/>
         </scene>
         <!--SendRViewController-->
         <scene sceneID="5Y1-Q9-GVM">
