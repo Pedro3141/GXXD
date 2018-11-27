@@ -12,6 +12,7 @@ import AVFoundation
 class ScanQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
     @IBOutlet weak var square: UIImageView!
+    @IBOutlet weak var backButton: UIButton!
     var video = AVCaptureVideoPreviewLayer()
     
     //Back button
@@ -22,42 +23,49 @@ class ScanQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-            //Creating session
-            let session = AVCaptureSession()
-            
-            //Define capture device
-            let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
-            
-            //Grabbing raw data from camera/capture device
-            do
-            {
-                let input = try AVCaptureDeviceInput(device: captureDevice!)
-                session.addInput(input)
-            }
-            catch
-            {
-                print("Error")
-            }
-            
-            //converting input to output
-            let output = AVCaptureMetadataOutput()
-            session.addOutput(output)
-            
-            output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            
-            //Reads QR data
-            output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
-            
-            //return to user video input (what the camera is seeing)
-            video = AVCaptureVideoPreviewLayer(session: session)
-            video.frame = view.layer.bounds
-            view.layer.addSublayer(video)
-            self.view.bringSubviewToFront(square)
-            
-            session.startRunning()
+        
+        backButton.layer.zPosition = 2 //put back button in front
+        QRCamera() //call QR Camera
     }
    
+    
+    func QRCamera() {
+        //Creating session
+        let session = AVCaptureSession()
+        
+        //Define capture device
+        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
+        
+        //Grabbing raw data from camera/capture device
+        do
+        {
+            let input = try AVCaptureDeviceInput(device: captureDevice!)
+            session.addInput(input)
+        }
+        catch
+        {
+            print("Error")
+        }
+        
+        //converting input to output
+        let output = AVCaptureMetadataOutput()
+        session.addOutput(output)
+        
+        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+        
+        //Reads QR data
+        output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+        
+        //return to user video input (what the camera is seeing)
+        video = AVCaptureVideoPreviewLayer(session: session)
+        video.frame = view.layer.bounds
+        view.bringSubviewToFront(backButton)
+        view.layer.addSublayer(video)
+        self.view.bringSubviewToFront(square)
+        
+        session.startRunning()
+    }
+    
     //Reading QR Codes
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects != nil && metadataObjects.count != 0 {
