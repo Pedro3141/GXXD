@@ -30,6 +30,7 @@
 		74B270BE218CD3520056EEBA /* DINPro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B270BD218CD3520056EEBA /* DINPro Bold.otf */; };
 		74E2A51B21A0CF3D00A2FE0B /* SaveData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74E2A51921A0CF3D00A2FE0B /* SaveData.xcdatamodeld */; };
 		74E2A53A21A0D00600A2FE0B /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2A53921A0D00600A2FE0B /* PersistenceService.swift */; };
+		EB09978E21ADD3C900814865 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB09978D21ADD3C900814865 /* LoginViewController.swift */; };
 		EB18FE6E21A5F4500029F599 /* stellarsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB18FE5F21A5F4370029F599 /* stellarsdk.framework */; };
 		EB18FE7021A5F45C0029F599 /* stellarsdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB18FE5F21A5F4370029F599 /* stellarsdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18FE7421A5FBF90029F599 /* TransactionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB18FE7321A5FBF90029F599 /* TransactionView.storyboard */; };
@@ -144,6 +145,7 @@
 		74B270BD218CD3520056EEBA /* DINPro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro Bold.otf"; sourceTree = "<group>"; };
 		74E2A51A21A0CF3D00A2FE0B /* SaveData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaveData.xcdatamodel; sourceTree = "<group>"; };
 		74E2A53921A0D00600A2FE0B /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		EB09978D21ADD3C900814865 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB18FE5421A5F4370029F599 /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "../../../../../Downloads/stellar-ios-mac-sdk-master/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
 		EB18FE7321A5FBF90029F599 /* TransactionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionView.storyboard; sourceTree = "<group>"; };
 		EB18FE7521A5FC940029F599 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				1F66D5BB21768EB60071E67C /* AppDelegate.swift */,
 				EB18FE7521A5FC940029F599 /* TransactionViewController.swift */,
 				1F66D5BD21768EB60071E67C /* HomeViewController.swift */,
+				EB09978D21ADD3C900814865 /* LoginViewController.swift */,
 				1FA684E3217AC937005455D6 /* PayViewContoller.swift */,
 				1FA684E5217AD1D5005455D6 /* RequestViewController.swift */,
 				1FA684E7217AD80E005455D6 /* SendRViewController.swift */,
@@ -413,6 +416,7 @@
 				1FEBFCCF217D807D00850682 /* ScanQRViewController.swift in Sources */,
 				1FA684E8217AD80E005455D6 /* SendRViewController.swift in Sources */,
 				1F66D5BE21768EB60071E67C /* HomeViewController.swift in Sources */,
+				EB09978E21ADD3C900814865 /* LoginViewController.swift in Sources */,
 				1F66D5BC21768EB60071E67C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

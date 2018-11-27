@@ -262,6 +262,42 @@
             </objects>
             <point key="canvasLocation" x="-3874" y="72"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="TNW-P2-Rd3">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="pUO-8f-4je" customClass="LoginViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1yf-K8-jS4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RB-72-VCn">
+                                <rect key="frame" x="164" y="453" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="HomeViewPressed:" destination="pUO-8f-4je" eventType="touchUpInside" id="Pgf-62-X2M"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kul-q8-6ZA">
+                                <rect key="frame" x="139" y="213" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="s0z-pu-fv7"/>
+                    </view>
+                    <connections>
+                        <outlet property="NameField" destination="kul-q8-6ZA" id="nm9-Zr-vxR"/>
+                        <segue destination="YWB-oT-DiL" kind="showDetail" identifier="Login2HomeSegue" id="cS3-PT-rEk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPL-kJ-77Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4711" y="-770"/>
+        </scene>
         <!--PayViewController-->
         <scene sceneID="ZWq-eP-hyH">
             <objects>

@@ -71,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="t8k-H1-Snm"/>
                     </view>
                     <connections>
+                        <outlet property="Name" destination="jCF-9D-cTl" id="Nsg-vP-PKW"/>
                         <outlet property="QRCodeContainer" destination="2zH-py-qyr" id="HXK-z9-Awq"/>
                         <segue destination="o9u-Lb-MuU" kind="show" identifier="MyQR2HomeSegue" id="wwQ-qy-ddZ"/>
                     </connections>
