@@ -44,6 +44,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE9-n5-5bd" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="549" width="375" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-9o-Lg1">
+                                        <rect key="frame" x="52.5" y="38" width="270" height="41"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="SEND OR REQUEST MONEY">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SendRequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caq-ZS-Wvj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="C7k-IS-dUx"/>
+                                    <constraint firstItem="X0y-9o-Lg1" firstAttribute="centerX" secondItem="nE9-n5-5bd" secondAttribute="centerX" id="UrT-7N-Un5"/>
+                                    <constraint firstAttribute="bottom" secondItem="X0y-9o-Lg1" secondAttribute="bottom" constant="39" id="WRj-Y8-Jpx"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYY-z5-PMF" userLabel="QR Button Views">
                                 <rect key="frame" x="0.0" y="363" width="375" height="186"/>
                                 <subviews>
@@ -114,7 +136,6 @@
                                 <constraints>
                                     <constraint firstItem="tyn-Rw-Jwl" firstAttribute="leading" secondItem="zYY-z5-PMF" secondAttribute="leading" constant="60" id="7op-sp-E1S"/>
                                     <constraint firstItem="6Ov-vv-y0J" firstAttribute="centerX" secondItem="qYG-TG-l2K" secondAttribute="centerX" id="8PK-0V-h2m"/>
-                                    <constraint firstAttribute="height" constant="186" id="ClC-mu-zvb"/>
                                     <constraint firstAttribute="trailing" secondItem="qYG-TG-l2K" secondAttribute="trailing" constant="60" id="EEF-PP-Ouu"/>
                                     <constraint firstItem="tyn-Rw-Jwl" firstAttribute="top" secondItem="zYY-z5-PMF" secondAttribute="top" constant="43" id="HUM-Ek-Xtx"/>
                                     <constraint firstItem="Mef-5o-c0I" firstAttribute="centerX" secondItem="qYG-TG-l2K" secondAttribute="centerX" id="JB9-AZ-TK9"/>
@@ -132,33 +153,23 @@
                                     <constraint firstItem="IhC-TP-5an" firstAttribute="leading" secondItem="zYY-z5-PMF" secondAttribute="leading" constant="83.5" id="zrT-bD-vLM"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE9-n5-5bd" userLabel="Bottom View">
-                                <rect key="frame" x="0.0" y="549" width="375" height="118"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prv-PM-0Ph" userLabel="Balance View">
+                                <rect key="frame" x="0.0" y="171" width="375" height="200"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-9o-Lg1">
-                                        <rect key="frame" x="52.5" y="38" width="270" height="41"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="SEND OR REQUEST MONEY">
-                                            <color key="titleColor" red="0.0" green="1" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="SendRequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caq-ZS-Wvj"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="118" id="C7k-IS-dUx"/>
-                                    <constraint firstItem="X0y-9o-Lg1" firstAttribute="centerX" secondItem="nE9-n5-5bd" secondAttribute="centerX" id="UrT-7N-Un5"/>
-                                    <constraint firstAttribute="bottom" secondItem="X0y-9o-Lg1" secondAttribute="bottom" constant="39" id="WRj-Y8-Jpx"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2f-uK-U0B" userLabel="Middle View">
-                                <rect key="frame" x="0.0" y="304" width="375" height="60"/>
-                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="100" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="taU-aB-bgG">
+                                        <rect key="frame" x="47" y="11.5" width="281" height="128"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="100"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTX-NP-5KM">
+                                        <rect key="frame" x="115" y="145" width="147" height="20"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-xc-aIA">
-                                        <rect key="frame" x="119.5" y="0.0" width="136" height="36"/>
+                                        <rect key="frame" x="119.5" y="164" width="136" height="36"/>
                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="18"/>
                                         <state key="normal" title="Last Transaction">
                                             <color key="titleColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,70 +180,43 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mRj-xc-aIA" firstAttribute="centerX" secondItem="C2f-uK-U0B" secondAttribute="centerX" id="3pY-tx-Moy"/>
-                                    <constraint firstAttribute="height" constant="60" id="hkF-oM-wqp"/>
-                                    <constraint firstAttribute="bottom" secondItem="mRj-xc-aIA" secondAttribute="bottom" constant="24" id="zkv-5M-7iq"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prv-PM-0Ph" userLabel="Balance View">
-                                <rect key="frame" x="0.0" y="146" width="375" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="100" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="taU-aB-bgG">
-                                        <rect key="frame" x="47" y="30" width="281" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Vd0-dW-Hzf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="100"/>
-                                        <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTX-NP-5KM">
-                                        <rect key="frame" x="115" y="137" width="147" height="20"/>
-                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
-                                        <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-Cd-lCL" userLabel="Add Money View">
-                                        <rect key="frame" x="0.0" y="-9" width="380" height="36"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-95-Jpo">
-                                                <rect key="frame" x="143" y="1" width="94" height="34"/>
-                                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                                <state key="normal" title="ADD MONEY">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2X-Hd-Ks9">
-                                                <rect key="frame" x="125" y="5" width="25" height="23"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="25" id="90S-vY-OJg"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="UV6-95-Jpo" firstAttribute="centerX" secondItem="ZUf-Cd-lCL" secondAttribute="centerX" id="34o-1n-nLO"/>
-                                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="centerY" secondItem="UV6-95-Jpo" secondAttribute="centerY" constant="-1.5" id="5ZM-Wf-phX"/>
-                                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="bottom" secondItem="ZUf-Cd-lCL" secondAttribute="bottomMargin" id="M5s-Gx-3jU"/>
-                                            <constraint firstItem="UV6-95-Jpo" firstAttribute="centerY" secondItem="ZUf-Cd-lCL" secondAttribute="centerY" id="dMT-oQ-Tps"/>
-                                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZUf-Cd-lCL" secondAttribute="leading" constant="125" id="p9a-3I-KiZ"/>
-                                            <constraint firstItem="UV6-95-Jpo" firstAttribute="leading" secondItem="A2X-Hd-Ks9" secondAttribute="trailing" constant="-7" id="zZS-dz-0iK"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ZUf-Cd-lCL" firstAttribute="top" secondItem="prv-PM-0Ph" secondAttribute="top" constant="-9" id="F10-pc-fjR"/>
-                                    <constraint firstItem="rTX-NP-5KM" firstAttribute="top" secondItem="prv-PM-0Ph" secondAttribute="top" constant="137" id="IzI-1l-TlQ"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="ZUf-Cd-lCL" secondAttribute="trailing" constant="-13" id="PYn-Bh-hOm"/>
-                                    <constraint firstItem="ZUf-Cd-lCL" firstAttribute="leading" secondItem="prv-PM-0Ph" secondAttribute="leading" id="UG1-77-cSZ"/>
-                                    <constraint firstAttribute="height" constant="160" id="ehY-qd-JQT"/>
-                                    <constraint firstItem="taU-aB-bgG" firstAttribute="centerY" secondItem="prv-PM-0Ph" secondAttribute="centerY" id="jbn-2X-AKx"/>
+                                    <constraint firstAttribute="bottom" secondItem="taU-aB-bgG" secondAttribute="bottom" constant="60.5" id="HRm-Md-ANe"/>
+                                    <constraint firstAttribute="bottom" secondItem="mRj-xc-aIA" secondAttribute="bottom" id="ZrI-YY-uht"/>
                                     <constraint firstItem="taU-aB-bgG" firstAttribute="centerX" secondItem="prv-PM-0Ph" secondAttribute="centerX" id="kXB-7G-WpD"/>
                                     <constraint firstItem="rTX-NP-5KM" firstAttribute="centerX" secondItem="prv-PM-0Ph" secondAttribute="centerX" constant="1" id="l5u-MO-QHt"/>
-                                    <constraint firstAttribute="top" secondItem="ZUf-Cd-lCL" secondAttribute="bottom" constant="-27" id="rca-0e-mWK"/>
+                                    <constraint firstItem="mRj-xc-aIA" firstAttribute="centerX" secondItem="prv-PM-0Ph" secondAttribute="centerX" id="nrK-vq-NgO"/>
+                                    <constraint firstAttribute="bottom" secondItem="rTX-NP-5KM" secondAttribute="bottom" constant="35" id="ybt-dA-N7t"/>
                                     <constraint firstItem="taU-aB-bgG" firstAttribute="width" secondItem="prv-PM-0Ph" secondAttribute="width" multiplier="0.75" id="zXH-sa-se3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-Cd-lCL" userLabel="Add Money View">
+                                <rect key="frame" x="0.0" y="137" width="375" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-95-Jpo">
+                                        <rect key="frame" x="143" y="0.5" width="94" height="34"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <state key="normal" title="ADD MONEY">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2X-Hd-Ks9">
+                                        <rect key="frame" x="125" y="5" width="25" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="90S-vY-OJg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="A2X-Hd-Ks9" firstAttribute="top" secondItem="ZUf-Cd-lCL" secondAttribute="top" constant="5" id="0Jh-wa-amy"/>
+                                    <constraint firstItem="A2X-Hd-Ks9" firstAttribute="centerY" secondItem="UV6-95-Jpo" secondAttribute="centerY" constant="-1.5" id="5ZM-Wf-phX"/>
+                                    <constraint firstItem="A2X-Hd-Ks9" firstAttribute="bottom" secondItem="ZUf-Cd-lCL" secondAttribute="bottomMargin" id="EaR-Tw-TqX"/>
+                                    <constraint firstItem="UV6-95-Jpo" firstAttribute="top" secondItem="ZUf-Cd-lCL" secondAttribute="top" constant="0.5" id="HV5-xd-mqP"/>
+                                    <constraint firstItem="A2X-Hd-Ks9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZUf-Cd-lCL" secondAttribute="leading" constant="20" symbolic="YES" id="Ro4-fY-0TD"/>
+                                    <constraint firstItem="UV6-95-Jpo" firstAttribute="centerX" secondItem="ZUf-Cd-lCL" secondAttribute="centerX" constant="2.5" id="wYa-KX-oDB"/>
+                                    <constraint firstItem="UV6-95-Jpo" firstAttribute="leading" secondItem="A2X-Hd-Ks9" secondAttribute="trailing" constant="-7" id="zZS-dz-0iK"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oB3-jg-Gi6" userLabel="Logo">
@@ -255,21 +239,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="prv-PM-0Ph" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="0FK-5m-Uio"/>
+                            <constraint firstItem="prv-PM-0Ph" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="0FK-5m-Uio"/>
                             <constraint firstItem="oB3-jg-Gi6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7uP-12-g6x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oB3-jg-Gi6" secondAttribute="trailing" id="Aqe-wT-YNU"/>
-                            <constraint firstItem="C2f-uK-U0B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="Gdd-YN-ok5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="prv-PM-0Ph" secondAttribute="trailing" id="Ipx-j8-cYJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zYY-z5-PMF" secondAttribute="bottom" constant="118" id="KPd-p1-fbL"/>
+                            <constraint firstItem="nE9-n5-5bd" firstAttribute="top" secondItem="zYY-z5-PMF" secondAttribute="bottom" id="O3H-iF-UrE"/>
                             <constraint firstItem="prv-PM-0Ph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Opd-AD-urF"/>
                             <constraint firstItem="oB3-jg-Gi6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PFB-kj-bOZ"/>
+                            <constraint firstItem="prv-PM-0Ph" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="Rpl-SP-wdq"/>
                             <constraint firstItem="nE9-n5-5bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yaw-US-jwR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zYY-z5-PMF" secondAttribute="trailing" id="btG-NJ-J5V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nE9-n5-5bd" secondAttribute="bottom" id="fSE-2L-ANX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2f-uK-U0B" secondAttribute="trailing" id="lCf-40-NdC"/>
-                            <constraint firstItem="prv-PM-0Ph" firstAttribute="top" secondItem="oB3-jg-Gi6" secondAttribute="bottom" constant="8" symbolic="YES" id="rZl-rm-T64"/>
+                            <constraint firstItem="prv-PM-0Ph" firstAttribute="top" secondItem="oB3-jg-Gi6" secondAttribute="bottom" constant="33" id="rZl-rm-T64"/>
+                            <constraint firstItem="ZUf-Cd-lCL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="sMW-5F-8CR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="ZUf-Cd-lCL" secondAttribute="leading" id="uHa-2c-i9a"/>
+                            <constraint firstItem="ZUf-Cd-lCL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uta-ds-azt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nE9-n5-5bd" secondAttribute="trailing" id="v9I-fY-DT7"/>
-                            <constraint firstItem="C2f-uK-U0B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xzf-eS-hSC"/>
                             <constraint firstItem="zYY-z5-PMF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z6M-CN-rCK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" userLabel="SafeArea"/>
