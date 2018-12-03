@@ -42,185 +42,235 @@
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="GXXD_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-Rw-Jwl">
-                                <rect key="frame" x="58" y="417" width="100" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYY-z5-PMF" userLabel="QR Button Views">
+                                <rect key="frame" x="0.0" y="363" width="375" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-Rw-Jwl">
+                                        <rect key="frame" x="60" y="43" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="hBY-S8-hzF"/>
+                                            <constraint firstAttribute="width" constant="100" id="wQQ-ZA-42t"/>
+                                        </constraints>
+                                        <state key="normal" title="SCAN QR" image="ScanQR01"/>
+                                        <connections>
+                                            <action selector="ScanQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rj2-I1-X9L"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mef-5o-c0I">
+                                        <rect key="frame" x="240" y="136" width="50" height="22"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-TP-5an">
+                                        <rect key="frame" x="83.5" y="16" width="53" height="41"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
+                                        <state key="normal" title="PAY">
+                                            <color key="titleColor" red="0.0" green="0.76470588235294112" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="PayViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FnG-H7-b9N"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgE-fs-NN5">
+                                        <rect key="frame" x="75" y="136" width="70" height="22"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-vv-y0J">
+                                        <rect key="frame" x="214" y="16" width="102" height="41"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
+                                        <state key="normal" title="REQUEST">
+                                            <color key="titleColor" red="0.0" green="0.76470588235294112" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUR-IX-HC6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-TG-l2K">
+                                        <rect key="frame" x="215" y="43" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="8xb-pB-c6L"/>
+                                            <constraint firstAttribute="width" constant="100" id="CJo-2o-oEL"/>
+                                        </constraints>
+                                        <state key="normal" title="MY QR" image="MyQR01"/>
+                                        <connections>
+                                            <action selector="MyQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYL-N9-WnW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="QNe-dg-JnT"/>
-                                    <constraint firstAttribute="width" constant="100" id="a0h-vs-JCS"/>
-                                    <constraint firstAttribute="width" secondItem="tyn-Rw-Jwl" secondAttribute="height" multiplier="1:1" id="hzd-Mp-nfb"/>
-                                    <constraint firstAttribute="height" constant="100" id="k3g-5h-LS6"/>
+                                    <constraint firstItem="tyn-Rw-Jwl" firstAttribute="leading" secondItem="zYY-z5-PMF" secondAttribute="leading" constant="60" id="7op-sp-E1S"/>
+                                    <constraint firstItem="6Ov-vv-y0J" firstAttribute="centerX" secondItem="qYG-TG-l2K" secondAttribute="centerX" id="8PK-0V-h2m"/>
+                                    <constraint firstAttribute="height" constant="186" id="ClC-mu-zvb"/>
+                                    <constraint firstAttribute="trailing" secondItem="qYG-TG-l2K" secondAttribute="trailing" constant="60" id="EEF-PP-Ouu"/>
+                                    <constraint firstItem="tyn-Rw-Jwl" firstAttribute="top" secondItem="zYY-z5-PMF" secondAttribute="top" constant="43" id="HUM-Ek-Xtx"/>
+                                    <constraint firstItem="Mef-5o-c0I" firstAttribute="centerX" secondItem="qYG-TG-l2K" secondAttribute="centerX" id="JB9-AZ-TK9"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mef-5o-c0I" secondAttribute="bottom" constant="28" id="LiE-sW-5k4"/>
+                                    <constraint firstAttribute="bottom" secondItem="qgE-fs-NN5" secondAttribute="bottom" constant="28" id="O2v-Q1-99v"/>
+                                    <constraint firstItem="IhC-TP-5an" firstAttribute="centerX" secondItem="tyn-Rw-Jwl" secondAttribute="centerX" id="V53-rF-lWB"/>
+                                    <constraint firstItem="6Ov-vv-y0J" firstAttribute="top" secondItem="zYY-z5-PMF" secondAttribute="top" constant="16" id="X5P-dx-aie"/>
+                                    <constraint firstItem="IhC-TP-5an" firstAttribute="centerY" secondItem="6Ov-vv-y0J" secondAttribute="centerY" id="XWy-KN-IlP"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Ov-vv-y0J" secondAttribute="trailing" constant="59" id="bpo-ol-euE"/>
+                                    <constraint firstItem="tyn-Rw-Jwl" firstAttribute="centerY" secondItem="zYY-z5-PMF" secondAttribute="centerY" id="dNl-Im-Kam"/>
+                                    <constraint firstItem="IhC-TP-5an" firstAttribute="top" secondItem="zYY-z5-PMF" secondAttribute="top" constant="16" id="oFQ-JA-COH"/>
+                                    <constraint firstItem="qYG-TG-l2K" firstAttribute="centerY" secondItem="tyn-Rw-Jwl" secondAttribute="centerY" id="qdh-h3-xPQ"/>
+                                    <constraint firstItem="qgE-fs-NN5" firstAttribute="centerX" secondItem="tyn-Rw-Jwl" secondAttribute="centerX" id="sVC-RC-yU9"/>
+                                    <constraint firstItem="qYG-TG-l2K" firstAttribute="top" secondItem="zYY-z5-PMF" secondAttribute="top" constant="43" id="szV-1c-Zqu"/>
+                                    <constraint firstItem="IhC-TP-5an" firstAttribute="leading" secondItem="zYY-z5-PMF" secondAttribute="leading" constant="83.5" id="zrT-bD-vLM"/>
                                 </constraints>
-                                <state key="normal" title="SCAN QR" image="ScanQR01"/>
-                                <connections>
-                                    <action selector="ScanQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rj2-I1-X9L"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-9o-Lg1">
-                                <rect key="frame" x="52" y="563" width="271" height="41"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="SEND OR REQUEST MONEY">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="SendRequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caq-ZS-Wvj"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgE-fs-NN5">
-                                <rect key="frame" x="73" y="505" width="70" height="20"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE9-n5-5bd" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="549" width="375" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-9o-Lg1">
+                                        <rect key="frame" x="52.5" y="38" width="270" height="41"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="SEND OR REQUEST MONEY">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SendRequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caq-ZS-Wvj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Sn6-Yc-8rs"/>
+                                    <constraint firstAttribute="height" constant="118" id="C7k-IS-dUx"/>
+                                    <constraint firstItem="X0y-9o-Lg1" firstAttribute="centerX" secondItem="nE9-n5-5bd" secondAttribute="centerX" id="UrT-7N-Un5"/>
+                                    <constraint firstAttribute="bottom" secondItem="X0y-9o-Lg1" secondAttribute="bottom" constant="39" id="WRj-Y8-Jpx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="m0X-Ca-dGb">
-                                <rect key="frame" x="136" y="50" width="103" height="88"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2f-uK-U0B" userLabel="Middle View">
+                                <rect key="frame" x="0.0" y="304" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-xc-aIA">
+                                        <rect key="frame" x="119.5" y="0.0" width="136" height="36"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="18"/>
+                                        <state key="normal" title="Last Transaction">
+                                            <color key="titleColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="TransactionViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwD-yd-w6M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="Rm2-zP-c82"/>
-                                    <constraint firstAttribute="width" constant="103" id="dq5-bI-1Se"/>
+                                    <constraint firstItem="mRj-xc-aIA" firstAttribute="centerX" secondItem="C2f-uK-U0B" secondAttribute="centerX" id="3pY-tx-Moy"/>
+                                    <constraint firstAttribute="height" constant="60" id="hkF-oM-wqp"/>
+                                    <constraint firstAttribute="bottom" secondItem="mRj-xc-aIA" secondAttribute="bottom" constant="24" id="zkv-5M-7iq"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-95-Jpo">
-                                <rect key="frame" x="140.5" y="117" width="94" height="34"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prv-PM-0Ph" userLabel="Balance View">
+                                <rect key="frame" x="0.0" y="146" width="375" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="100" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="taU-aB-bgG">
+                                        <rect key="frame" x="47" y="30" width="281" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Vd0-dW-Hzf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="100"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTX-NP-5KM">
+                                        <rect key="frame" x="115" y="137" width="147" height="20"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-Cd-lCL" userLabel="Add Money View">
+                                        <rect key="frame" x="0.0" y="-9" width="380" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-95-Jpo">
+                                                <rect key="frame" x="143" y="1" width="94" height="34"/>
+                                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                                <state key="normal" title="ADD MONEY">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2X-Hd-Ks9">
+                                                <rect key="frame" x="125" y="5" width="25" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="90S-vY-OJg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="UV6-95-Jpo" firstAttribute="centerX" secondItem="ZUf-Cd-lCL" secondAttribute="centerX" id="34o-1n-nLO"/>
+                                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="centerY" secondItem="UV6-95-Jpo" secondAttribute="centerY" constant="-1.5" id="5ZM-Wf-phX"/>
+                                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="bottom" secondItem="ZUf-Cd-lCL" secondAttribute="bottomMargin" id="M5s-Gx-3jU"/>
+                                            <constraint firstItem="UV6-95-Jpo" firstAttribute="centerY" secondItem="ZUf-Cd-lCL" secondAttribute="centerY" id="dMT-oQ-Tps"/>
+                                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZUf-Cd-lCL" secondAttribute="leading" constant="125" id="p9a-3I-KiZ"/>
+                                            <constraint firstItem="UV6-95-Jpo" firstAttribute="leading" secondItem="A2X-Hd-Ks9" secondAttribute="trailing" constant="-7" id="zZS-dz-0iK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="BO8-d4-HOC"/>
-                                    <constraint firstAttribute="width" secondItem="UV6-95-Jpo" secondAttribute="height" multiplier="47:17" id="Bgg-Nz-3ZA"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="tQo-l6-Kv3"/>
+                                    <constraint firstItem="ZUf-Cd-lCL" firstAttribute="top" secondItem="prv-PM-0Ph" secondAttribute="top" constant="-9" id="F10-pc-fjR"/>
+                                    <constraint firstItem="rTX-NP-5KM" firstAttribute="top" secondItem="prv-PM-0Ph" secondAttribute="top" constant="137" id="IzI-1l-TlQ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ZUf-Cd-lCL" secondAttribute="trailing" constant="-13" id="PYn-Bh-hOm"/>
+                                    <constraint firstItem="ZUf-Cd-lCL" firstAttribute="leading" secondItem="prv-PM-0Ph" secondAttribute="leading" id="UG1-77-cSZ"/>
+                                    <constraint firstAttribute="height" constant="160" id="ehY-qd-JQT"/>
+                                    <constraint firstItem="taU-aB-bgG" firstAttribute="centerY" secondItem="prv-PM-0Ph" secondAttribute="centerY" id="jbn-2X-AKx"/>
+                                    <constraint firstItem="taU-aB-bgG" firstAttribute="centerX" secondItem="prv-PM-0Ph" secondAttribute="centerX" id="kXB-7G-WpD"/>
+                                    <constraint firstItem="rTX-NP-5KM" firstAttribute="centerX" secondItem="prv-PM-0Ph" secondAttribute="centerX" constant="1" id="l5u-MO-QHt"/>
+                                    <constraint firstAttribute="top" secondItem="ZUf-Cd-lCL" secondAttribute="bottom" constant="-27" id="rca-0e-mWK"/>
+                                    <constraint firstItem="taU-aB-bgG" firstAttribute="width" secondItem="prv-PM-0Ph" secondAttribute="width" multiplier="0.75" id="zXH-sa-se3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <state key="normal" title="ADD MONEY">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTX-NP-5KM">
-                                <rect key="frame" x="114" y="254" width="147" height="20"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oB3-jg-Gi6" userLabel="Logo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="74"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="m0X-Ca-dGb">
+                                        <rect key="frame" x="136" y="-7" width="103" height="88"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="NTx-7t-w4Y"/>
+                                            <constraint firstAttribute="width" constant="103" id="OcV-Sn-VbO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="rTX-NP-5KM" secondAttribute="height" multiplier="147:20" id="DRr-2z-RuB"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="147" id="znb-Ih-lAY"/>
+                                    <constraint firstItem="m0X-Ca-dGb" firstAttribute="centerY" secondItem="oB3-jg-Gi6" secondAttribute="centerY" id="56U-9f-WPe"/>
+                                    <constraint firstItem="m0X-Ca-dGb" firstAttribute="centerX" secondItem="oB3-jg-Gi6" secondAttribute="centerX" id="8Lp-a2-Li8"/>
+                                    <constraint firstItem="m0X-Ca-dGb" firstAttribute="top" secondItem="oB3-jg-Gi6" secondAttribute="top" constant="-7" id="Wny-Ig-i5j"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2X-Hd-Ks9">
-                                <rect key="frame" x="124" y="124" width="20" height="20"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-TP-5an">
-                                <rect key="frame" x="88.5" y="387" width="39" height="41"/>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
-                                <state key="normal" title="PAY">
-                                    <color key="titleColor" red="0.0" green="0.76470588235294112" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="PayViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FnG-H7-b9N"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mef-5o-c0I">
-                                <rect key="frame" x="242" y="503" width="50" height="20"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-vv-y0J">
-                                <rect key="frame" x="219" y="387" width="96" height="41"/>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="22"/>
-                                <state key="normal" title="REQUEST">
-                                    <color key="titleColor" red="0.0" green="0.76470588235294112" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="RequestViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUR-IX-HC6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taU-aB-bgG">
-                                <rect key="frame" x="129" y="146" width="117" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="qK4-Mx-I2M"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="100"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-TG-l2K">
-                                <rect key="frame" x="217" y="417" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="bA9-2W-0Zg"/>
-                                    <constraint firstAttribute="height" constant="100" id="gEg-S8-Ns8"/>
-                                    <constraint firstAttribute="width" secondItem="qYG-TG-l2K" secondAttribute="height" multiplier="1:1" id="rEb-Br-kX8"/>
-                                    <constraint firstAttribute="height" constant="100" id="uU6-Yq-SSe"/>
-                                </constraints>
-                                <state key="normal" title="MY QR" image="MyQR01"/>
-                                <connections>
-                                    <action selector="MyQRPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYL-N9-WnW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-xc-aIA">
-                                <rect key="frame" x="124" y="282" width="128" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="17"/>
-                                <state key="normal" title="Last Transaction">
-                                    <color key="titleColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="TransactionViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwD-yd-w6M"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Mef-5o-c0I" firstAttribute="centerX" secondItem="qYG-TG-l2K" secondAttribute="centerX" id="1GX-A8-uQ8"/>
-                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="centerX" secondItem="qgE-fs-NN5" secondAttribute="centerX" id="2a3-Oa-Lhg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qYG-TG-l2K" secondAttribute="trailing" constant="58" id="5Xe-53-dxh"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="width" secondItem="tyn-Rw-Jwl" secondAttribute="width" id="755-WW-E4Y"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="leading" secondItem="tyn-Rw-Jwl" secondAttribute="trailing" constant="59" id="A69-lY-SFE"/>
-                            <constraint firstItem="rTX-NP-5KM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="CEF-1i-0bB"/>
-                            <constraint firstItem="taU-aB-bgG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="146" id="CPV-f5-vx3"/>
-                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="centerX" secondItem="IhC-TP-5an" secondAttribute="centerX" id="D6n-6x-ZPg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2X-Hd-Ks9" secondAttribute="trailing" constant="231" id="Fun-MG-rPa"/>
-                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="centerX" secondItem="rTX-NP-5KM" secondAttribute="centerX" id="HFn-Q4-K2M"/>
-                            <constraint firstItem="taU-aB-bgG" firstAttribute="centerX" secondItem="rTX-NP-5KM" secondAttribute="centerX" id="K2P-KR-o1Z"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="top" secondItem="tyn-Rw-Jwl" secondAttribute="top" id="KFw-SG-E9h"/>
-                            <constraint firstItem="UV6-95-Jpo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="Kse-o5-9OM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UV6-95-Jpo" secondAttribute="trailing" constant="140.5" id="LYC-90-Vj4"/>
-                            <constraint firstItem="rTX-NP-5KM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N0X-7S-qbp"/>
-                            <constraint firstAttribute="bottom" secondItem="qgE-fs-NN5" secondAttribute="bottom" constant="142" id="N9c-si-cTG"/>
-                            <constraint firstItem="qgE-fs-NN5" firstAttribute="top" secondItem="IhC-TP-5an" secondAttribute="bottom" constant="77" id="P8e-St-XhC"/>
-                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="Q1n-U6-JSC"/>
-                            <constraint firstItem="IhC-TP-5an" firstAttribute="baseline" secondItem="6Ov-vv-y0J" secondAttribute="baseline" id="RyJ-z4-h0J"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="centerX" secondItem="6Ov-vv-y0J" secondAttribute="centerX" id="ShG-NU-2fe"/>
-                            <constraint firstItem="rTX-NP-5KM" firstAttribute="top" secondItem="taU-aB-bgG" secondAttribute="bottom" constant="8" symbolic="YES" id="Zgj-Xr-5Lv"/>
-                            <constraint firstItem="A2X-Hd-Ks9" firstAttribute="centerY" secondItem="UV6-95-Jpo" secondAttribute="centerY" id="Zwb-Vo-Rhl"/>
-                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="qgE-fs-NN5" secondAttribute="bottom" constant="38" id="aEd-ri-qaC"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="width" secondItem="tyn-Rw-Jwl" secondAttribute="height" multiplier="1:1" id="aYi-XB-aVL"/>
-                            <constraint firstItem="m0X-Ca-dGb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bnt-wG-4pV"/>
-                            <constraint firstItem="taU-aB-bgG" firstAttribute="top" secondItem="m0X-Ca-dGb" secondAttribute="bottom" constant="8" symbolic="YES" id="dS3-ol-cVS"/>
-                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="dzQ-O0-wa0"/>
-                            <constraint firstItem="UV6-95-Jpo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hEL-hS-9kx"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="height" secondItem="tyn-Rw-Jwl" secondAttribute="height" id="lnF-5i-Yrb"/>
-                            <constraint firstItem="tyn-Rw-Jwl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="353" id="mxx-cG-vaU"/>
-                            <constraint firstItem="Mef-5o-c0I" firstAttribute="firstBaseline" secondItem="qgE-fs-NN5" secondAttribute="baseline" id="niT-9o-u6N"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="353" id="pa4-hK-iWu"/>
-                            <constraint firstItem="qYG-TG-l2K" firstAttribute="centerY" secondItem="tyn-Rw-Jwl" secondAttribute="centerY" id="sBC-D3-eQY"/>
-                            <constraint firstItem="taU-aB-bgG" firstAttribute="top" secondItem="A2X-Hd-Ks9" secondAttribute="bottom" constant="2" id="tw6-nb-mfN"/>
-                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="Mef-5o-c0I" secondAttribute="bottom" constant="40" id="twH-1r-Pie"/>
-                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="top" secondItem="qYG-TG-l2K" secondAttribute="bottom" constant="46" id="uvu-dd-S4g"/>
-                            <constraint firstItem="X0y-9o-Lg1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="zme-Mj-fbF"/>
+                            <constraint firstItem="prv-PM-0Ph" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="0FK-5m-Uio"/>
+                            <constraint firstItem="oB3-jg-Gi6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7uP-12-g6x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oB3-jg-Gi6" secondAttribute="trailing" id="Aqe-wT-YNU"/>
+                            <constraint firstItem="C2f-uK-U0B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="Gdd-YN-ok5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="prv-PM-0Ph" secondAttribute="trailing" id="Ipx-j8-cYJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zYY-z5-PMF" secondAttribute="bottom" constant="118" id="KPd-p1-fbL"/>
+                            <constraint firstItem="prv-PM-0Ph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Opd-AD-urF"/>
+                            <constraint firstItem="oB3-jg-Gi6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PFB-kj-bOZ"/>
+                            <constraint firstItem="nE9-n5-5bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yaw-US-jwR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zYY-z5-PMF" secondAttribute="trailing" id="btG-NJ-J5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nE9-n5-5bd" secondAttribute="bottom" id="fSE-2L-ANX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2f-uK-U0B" secondAttribute="trailing" id="lCf-40-NdC"/>
+                            <constraint firstItem="prv-PM-0Ph" firstAttribute="top" secondItem="oB3-jg-Gi6" secondAttribute="bottom" constant="8" symbolic="YES" id="rZl-rm-T64"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nE9-n5-5bd" secondAttribute="trailing" id="v9I-fY-DT7"/>
+                            <constraint firstItem="C2f-uK-U0B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xzf-eS-hSC"/>
+                            <constraint firstItem="zYY-z5-PMF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z6M-CN-rCK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" userLabel="SafeArea"/>
                     </view>
@@ -270,51 +320,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kul-q8-6ZA">
-                                <rect key="frame" x="102" y="243" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-Nc-vkd">
-                                <rect key="frame" x="84" y="67" width="206" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RB-72-VCn">
-                                <rect key="frame" x="155" y="345" width="65" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="HomeViewPressed:" destination="pUO-8f-4je" eventType="touchUpInside" id="Pgf-62-X2M"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(C) GXXD 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-J9-2ha">
-                                <rect key="frame" x="139" y="614" width="97" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Never Better." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-wr-SwT">
-                                <rect key="frame" x="137" y="190" width="102" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-cv-Opb">
-                                <rect key="frame" x="102" y="281" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMo-tT-adg" userLabel="Logo View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="220"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never Better." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-wr-SwT">
+                                        <rect key="frame" x="137" y="153" width="102" height="22"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GxxdPay01" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-Nc-vkd">
+                                        <rect key="frame" x="85" y="24" width="206" height="176"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="206" id="spr-MK-zch"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="O7Z-Nc-vkd" firstAttribute="top" secondItem="zMo-tT-adg" secondAttribute="top" constant="24" id="2ou-i9-Ov8"/>
+                                    <constraint firstItem="lBW-wr-SwT" firstAttribute="top" secondItem="O7Z-Nc-vkd" secondAttribute="bottom" constant="-47" id="HaH-C5-hRY"/>
+                                    <constraint firstItem="O7Z-Nc-vkd" firstAttribute="centerX" secondItem="zMo-tT-adg" secondAttribute="centerX" id="c9F-GE-ZPp"/>
+                                    <constraint firstItem="lBW-wr-SwT" firstAttribute="centerX" secondItem="zMo-tT-adg" secondAttribute="centerX" id="jzm-oc-6Ag"/>
+                                    <constraint firstAttribute="height" constant="220" id="mZO-PI-88a"/>
+                                    <constraint firstItem="lBW-wr-SwT" firstAttribute="centerX" secondItem="O7Z-Nc-vkd" secondAttribute="centerX" id="thX-uk-Mob"/>
+                                    <constraint firstItem="lBW-wr-SwT" firstAttribute="top" secondItem="zMo-tT-adg" secondAttribute="top" constant="153" id="yky-mk-n6f"/>
+                                    <constraint firstAttribute="bottom" secondItem="O7Z-Nc-vkd" secondAttribute="bottom" constant="20" id="yvB-qy-VSL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-mq-P1I" userLabel="Fields View">
+                                <rect key="frame" x="0.0" y="241" width="375" height="426"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RB-72-VCn">
+                                        <rect key="frame" x="155" y="154" width="65" height="34"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="HomeViewPressed:" destination="pUO-8f-4je" eventType="touchUpInside" id="Pgf-62-X2M"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kul-q8-6ZA">
+                                        <rect key="frame" x="102" y="42" width="171" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="zFu-3C-l0Q"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-cv-Opb">
+                                        <rect key="frame" x="102" y="93" width="171" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="ak2-gS-Ifp"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(C) GXXD 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-J9-2ha">
+                                        <rect key="frame" x="139" y="318" width="97" height="20"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0RB-72-VCn" firstAttribute="centerX" secondItem="JfB-J9-2ha" secondAttribute="centerX" id="72w-jy-YP3"/>
+                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="height" secondItem="aQr-cv-Opb" secondAttribute="height" id="7z7-3Z-6vK"/>
+                                    <constraint firstItem="0RB-72-VCn" firstAttribute="top" secondItem="hcS-mq-P1I" secondAttribute="top" constant="154" id="AEY-E2-kFS"/>
+                                    <constraint firstItem="0RB-72-VCn" firstAttribute="centerX" secondItem="hcS-mq-P1I" secondAttribute="centerX" id="Fg6-gX-1MW"/>
+                                    <constraint firstAttribute="bottom" secondItem="JfB-J9-2ha" secondAttribute="bottom" constant="88" id="KI5-KB-y8a"/>
+                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="centerX" secondItem="hcS-mq-P1I" secondAttribute="centerX" id="UhV-KX-Q16"/>
+                                    <constraint firstItem="aQr-cv-Opb" firstAttribute="top" secondItem="kul-q8-6ZA" secondAttribute="bottom" constant="21" id="Y4T-KH-9IB"/>
+                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="width" secondItem="aQr-cv-Opb" secondAttribute="width" id="bkl-s1-1Zm"/>
+                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="top" secondItem="hcS-mq-P1I" secondAttribute="top" constant="42" id="fkd-ri-g7G"/>
+                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="centerX" secondItem="aQr-cv-Opb" secondAttribute="centerX" id="ro3-Gl-BFc"/>
+                                    <constraint firstItem="JfB-J9-2ha" firstAttribute="centerX" secondItem="hcS-mq-P1I" secondAttribute="centerX" id="vmC-Aa-Ewu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s0z-pu-fv7" firstAttribute="bottom" secondItem="hcS-mq-P1I" secondAttribute="bottom" id="47C-c9-obZ"/>
+                            <constraint firstItem="zMo-tT-adg" firstAttribute="trailing" secondItem="s0z-pu-fv7" secondAttribute="trailing" id="5N2-4C-b3K"/>
+                            <constraint firstItem="zMo-tT-adg" firstAttribute="leading" secondItem="s0z-pu-fv7" secondAttribute="leading" id="NgD-5c-DID"/>
+                            <constraint firstItem="hcS-mq-P1I" firstAttribute="leading" secondItem="s0z-pu-fv7" secondAttribute="leading" id="O2g-5w-GiP"/>
+                            <constraint firstItem="hcS-mq-P1I" firstAttribute="top" secondItem="zMo-tT-adg" secondAttribute="bottom" constant="1" id="PAw-sz-Nxd"/>
+                            <constraint firstItem="hcS-mq-P1I" firstAttribute="leading" secondItem="s0z-pu-fv7" secondAttribute="leading" id="Yse-DH-VFL"/>
+                            <constraint firstItem="zMo-tT-adg" firstAttribute="top" secondItem="s0z-pu-fv7" secondAttribute="top" id="kfU-IL-UKV"/>
+                            <constraint firstItem="s0z-pu-fv7" firstAttribute="trailing" secondItem="hcS-mq-P1I" secondAttribute="trailing" id="ok1-ov-G4h"/>
+                            <constraint firstItem="s0z-pu-fv7" firstAttribute="trailing" secondItem="hcS-mq-P1I" secondAttribute="trailing" id="sUH-pa-KU7"/>
+                            <constraint firstItem="s0z-pu-fv7" firstAttribute="bottom" secondItem="hcS-mq-P1I" secondAttribute="bottom" id="yGn-vd-gx4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="s0z-pu-fv7"/>
                     </view>
                     <connections>
