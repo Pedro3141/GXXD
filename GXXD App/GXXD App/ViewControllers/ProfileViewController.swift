@@ -22,7 +22,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         // populates the labels from input on logon page
-         firstName.text = UserDefaults.standard.value(forKey: "name") as! String
+        firstName.text = UserDefaults.standard.value(forKey: "name") as? String
         
         // Do any additional setup after loading the view.
     }

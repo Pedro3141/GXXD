@@ -10,7 +10,7 @@ import UIKit
 
 class PayViewController: UIViewController {
 
-    @IBOutlet weak var AmountToPay: UILabel!
+    @IBOutlet weak var AmountToPay: UILabel! //entered amount
     
     //Number buttons have a tag number+1, 1 == 2, 0 == 1
     @IBAction func Numbers(_ sender: UIButton)
@@ -22,11 +22,16 @@ class PayViewController: UIViewController {
             AmountToPay.text = " ";
         }
     }
+    
+    
+    
+    //Segue
     @IBAction func Pay2HomeButton(_ sender: Any) {
         
         self.performSegue(withIdentifier: "Pay2HomeSegue", sender: self)
         
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

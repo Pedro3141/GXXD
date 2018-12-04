@@ -12,12 +12,13 @@ import UIKit
 class MyQRViewController: UIViewController{
     @IBOutlet weak var QRCodeContainer: UIImageView!
     @IBOutlet weak var Name: UILabel!
-    let AccountKey = UserDefaults.standard.value(forKey: "AccountId") as! String
     
+    //Public key
+    let PublicKey = UserDefaults.standard.value(forKey: "PublicKey") as! String
     
-    //Generate QR code from account
+    //Generate QR code from Public Key
     func GenerateQR() {
-        if let textToConvert = AccountKey.data(using: .ascii) {
+        if let textToConvert = PublicKey.data(using: .ascii) {
             let filter = CIFilter(name: "CIQRCodeGenerator") //standard QR filter
             filter?.setValue(textToConvert, forKey:"inputMessage") //message
             let transform = CGAffineTransform(scaleX: 10, y: 10) //crisping image
@@ -36,7 +37,7 @@ class MyQRViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Name.text = UserDefaults.standard.value(forKey: "name") as! String
+        Name.text = UserDefaults.standard.value(forKey: "name") as? String
         GenerateQR()
     }
     

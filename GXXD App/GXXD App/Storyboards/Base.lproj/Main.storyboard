@@ -417,7 +417,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="PayViewController" storyboardName="PayView" referencedIdentifier="PayViewController" id="nsE-Kf-YXF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9N-au-D4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2234" y="-217"/>
+            <point key="canvasLocation" x="-2235" y="-90"/>
         </scene>
         <!--RequestViewContoller-->
         <scene sceneID="XnV-Qf-ML4">
@@ -425,7 +425,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="RequestViewContoller" storyboardName="RequestView" referencedIdentifier="RequestViewContoller" id="Yeq-b6-OhB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Utu-Ms-wwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2215" y="-87"/>
+            <point key="canvasLocation" x="-2217" y="-64"/>
         </scene>
         <!--TransactionViewController-->
         <scene sceneID="iZR-Tc-3iP">
@@ -433,7 +433,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="TransactionViewController" storyboardName="TransactionView" referencedIdentifier="TransactionViewController" id="63l-Bg-Kz2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7e-0c-iUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2210" y="-9"/>
+            <point key="canvasLocation" x="-2196" y="-11"/>
         </scene>
         <!--SendRViewController-->
         <scene sceneID="5Y1-Q9-GVM">
@@ -441,7 +441,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="SendRViewController" storyboardName="SendOrRequestView" referencedIdentifier="SendRViewController" id="vAI-Gj-ZSQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VY4-2d-HoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2220" y="70"/>
+            <point key="canvasLocation" x="-2222" y="-38"/>
         </scene>
         <!--MyQRViewController-->
         <scene sceneID="VDO-kz-EMd">
@@ -449,7 +449,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="MyQRViewController" storyboardName="MyQRView" referencedIdentifier="MyQRViewController" id="VQ6-uU-oLv" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsL-ah-GTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2222" y="224"/>
+            <point key="canvasLocation" x="-2224" y="14"/>
         </scene>
         <!--ScanQRViewController-->
         <scene sceneID="LZP-wo-NT5">
@@ -457,7 +457,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="ScanQRViewController" storyboardName="ScanQRView" referencedIdentifier="ScanQRViewController" id="aas-Nk-XPk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDv-zg-cZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2213" y="359"/>
+            <point key="canvasLocation" x="-2214" y="40"/>
         </scene>
         <!--SideBarView-->
         <scene sceneID="reZ-Fk-ocM">

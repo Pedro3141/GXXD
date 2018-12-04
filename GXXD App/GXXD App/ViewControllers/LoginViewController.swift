@@ -14,8 +14,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var NameField: UITextField!
     
     @IBAction func HomeViewPressed(_ sender: UIButton) {
-        UserDefaults.standard.set(NameField.text, forKey: "name")
-        UserDefaults.standard.set(keyPair.accountId, forKey: "AccountId")
+        
+        //User defaults onto 
+        UserDefaults.standard.set(NameField.text, forKey: "name") //user's name
+        UserDefaults.standard.set(keyPair.accountId, forKey: "AccountId") //account ID
+        UserDefaults.standard.set(keyPair.publicKey, forKey: "PublicKey") //Public key
+        UserDefaults.standard.set(keyPair.privateKey, forKey: "PrivateKey") //Public key
+        
         performSegue(withIdentifier: "Login2HomeSegue", sender: self)
         
     }
