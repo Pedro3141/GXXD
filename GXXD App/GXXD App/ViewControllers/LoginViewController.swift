@@ -12,6 +12,12 @@ import stellarsdk
 class LoginViewController: UIViewController {
     let keyPair = try! KeyPair.generateRandomKeyPair() //test
     @IBOutlet weak var NameField: UITextField!
+    @IBOutlet weak var LastName: UITextField!
+    @IBOutlet weak var EmailField: UITextField!
+    
+    @IBOutlet weak var CityField: UITextField!
+    
+    //@IBOutlet weak var CityField: UITextField!
     
     @IBAction func HomeViewPressed(_ sender: UIButton) {
         
@@ -20,8 +26,11 @@ class LoginViewController: UIViewController {
         let privateData = NSData(bytes: privateBytes, length: privateBytes.count)
         
         //User defaults onto 
-        UserDefaults.standard.set(NameField.text, forKey: "name") //user's name
+        UserDefaults.standard.set(NameField.text, forKey: "Name") //user's first name
         UserDefaults.standard.set(keyPair.accountId, forKey: "AccountId") //account ID
+        UserDefaults.standard.set(LastName.text, forKey: "LastName") //user's last name
+       UserDefaults.standard.set(EmailField.text, forKey: "Email") // users' email
+        UserDefaults.standard.set(CityField.text, forKey: "City") // user's city
         UserDefaults.standard.set(publicData, forKey: "PublicKey") //Public key
         UserDefaults.standard.set(privateData, forKey: "PrivateKey") //Private key
         

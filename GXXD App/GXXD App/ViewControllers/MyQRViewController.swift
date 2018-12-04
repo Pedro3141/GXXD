@@ -38,7 +38,7 @@ class MyQRViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Name.text = UserDefaults.standard.value(forKey: "name") as? String
+        Name.text = UserDefaults.standard.value(forKey: "Name") as? String
         GenerateQR()
     }
     

@@ -185,7 +185,7 @@
                     <connections>
                         <outlet property="age" destination="Pmh-Xp-Tzf" id="y0r-9f-Uai"/>
                         <outlet property="city" destination="euW-9M-RjC" id="5He-Cj-M7a"/>
-                        <outlet property="email" destination="ffE-FX-Vv6" id="QOw-9R-3sJ"/>
+                        <outlet property="email" destination="ffE-FX-Vv6" id="JlJ-Si-yro"/>
                         <outlet property="firstName" destination="IgV-dH-vBg" id="hEQ-xD-pJk"/>
                         <outlet property="lastName" destination="6B0-RX-kC7" id="WeV-4S-1zB"/>
                         <outlet property="state" destination="ZLs-YJ-AAz" id="ub5-j0-M1y"/>
@@ -402,7 +402,7 @@
     </scenes>
     <resources>
         <image name="GxxdPay01" width="1024" height="1024"/>
-        <image name="testuser" width="512" height="512"/>
+        <image name="testuser" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="YZX-UC-TbB"/>

@@ -337,8 +337,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-mq-P1I" userLabel="Fields View">
                                 <rect key="frame" x="0.0" y="241" width="375" height="426"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RB-72-VCn">
-                                        <rect key="frame" x="155" y="154" width="65" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RB-72-VCn">
+                                        <rect key="frame" x="155" y="256" width="65" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
                                         <state key="normal" title="Register">
                                             <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -347,7 +348,7 @@
                                             <action selector="HomeViewPressed:" destination="pUO-8f-4je" eventType="touchUpInside" id="Pgf-62-X2M"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kul-q8-6ZA">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kul-q8-6ZA">
                                         <rect key="frame" x="102" y="42" width="171" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="zFu-3C-l0Q"/>
@@ -356,33 +357,38 @@
                                         <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-cv-Opb">
-                                        <rect key="frame" x="102" y="93" width="171" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="ak2-gS-Ifp"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(C) GXXD 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-J9-2ha">
                                         <rect key="frame" x="139" y="318" width="97" height="20"/>
                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByQ-7w-4ZI">
+                                        <rect key="frame" x="102" y="93" width="171" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Oy-P4-EMP">
+                                        <rect key="frame" x="102" y="142" width="171" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4va-Pn-VaQ">
+                                        <rect key="frame" x="102" y="193" width="171" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="0RB-72-VCn" firstAttribute="centerX" secondItem="JfB-J9-2ha" secondAttribute="centerX" id="72w-jy-YP3"/>
-                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="height" secondItem="aQr-cv-Opb" secondAttribute="height" id="7z7-3Z-6vK"/>
-                                    <constraint firstItem="0RB-72-VCn" firstAttribute="top" secondItem="hcS-mq-P1I" secondAttribute="top" constant="154" id="AEY-E2-kFS"/>
-                                    <constraint firstItem="0RB-72-VCn" firstAttribute="centerX" secondItem="hcS-mq-P1I" secondAttribute="centerX" id="Fg6-gX-1MW"/>
                                     <constraint firstAttribute="bottom" secondItem="JfB-J9-2ha" secondAttribute="bottom" constant="88" id="KI5-KB-y8a"/>
                                     <constraint firstItem="kul-q8-6ZA" firstAttribute="centerX" secondItem="hcS-mq-P1I" secondAttribute="centerX" id="UhV-KX-Q16"/>
-                                    <constraint firstItem="aQr-cv-Opb" firstAttribute="top" secondItem="kul-q8-6ZA" secondAttribute="bottom" constant="21" id="Y4T-KH-9IB"/>
-                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="width" secondItem="aQr-cv-Opb" secondAttribute="width" id="bkl-s1-1Zm"/>
                                     <constraint firstItem="kul-q8-6ZA" firstAttribute="top" secondItem="hcS-mq-P1I" secondAttribute="top" constant="42" id="fkd-ri-g7G"/>
-                                    <constraint firstItem="kul-q8-6ZA" firstAttribute="centerX" secondItem="aQr-cv-Opb" secondAttribute="centerX" id="ro3-Gl-BFc"/>
                                     <constraint firstItem="JfB-J9-2ha" firstAttribute="centerX" secondItem="hcS-mq-P1I" secondAttribute="centerX" id="vmC-Aa-Ewu"/>
                                 </constraints>
                             </view>
@@ -403,13 +409,16 @@
                         <viewLayoutGuide key="safeArea" id="s0z-pu-fv7"/>
                     </view>
                     <connections>
+                        <outlet property="CityField" destination="4va-Pn-VaQ" id="2WT-T2-az9"/>
+                        <outlet property="EmailField" destination="2Oy-P4-EMP" id="KuH-KQ-oRc"/>
+                        <outlet property="LastName" destination="ByQ-7w-4ZI" id="bzr-2n-tT1"/>
                         <outlet property="NameField" destination="kul-q8-6ZA" id="nm9-Zr-vxR"/>
                         <segue destination="YWB-oT-DiL" kind="showDetail" identifier="Login2HomeSegue" id="cS3-PT-rEk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPL-kJ-77Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4711.1999999999998" y="-770.46476761619192"/>
+            <point key="canvasLocation" x="-4711.1999999999998" y="-779.46026986506752"/>
         </scene>
         <!--PayViewController-->
         <scene sceneID="ZWq-eP-hyH">
