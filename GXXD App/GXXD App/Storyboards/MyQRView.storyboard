@@ -46,7 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCF-9D-cTl">
-                                <rect key="frame" x="104" y="96" width="46" height="22"/>
+                                <rect key="frame" x="104" y="96" width="174" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6W-qX-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2140" y="830"/>
+            <point key="canvasLocation" x="-2140" y="829.83508245877067"/>
         </scene>
         <!--UIViewController-YWB-oT-DiL-->
         <scene sceneID="4W7-Z1-NNc">
@@ -91,6 +91,6 @@
     </scenes>
     <resources>
         <image name="GxxdPay01" width="1024" height="1024"/>
-        <image name="testuser" width="40" height="40"/>
+        <image name="testuser" width="512" height="512"/>
     </resources>
 </document>
