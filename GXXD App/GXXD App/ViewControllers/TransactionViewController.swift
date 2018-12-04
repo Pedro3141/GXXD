@@ -16,6 +16,8 @@ class TransactionViewController: UIViewController {
         self.performSegue(withIdentifier: "Transaction2HomeSegue", sender: self)
     }
     
+    //Get transaction functions here
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

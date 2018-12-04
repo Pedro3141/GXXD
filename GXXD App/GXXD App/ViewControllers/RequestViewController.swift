@@ -21,6 +21,14 @@ class RequestViewController: UIViewController {
         }
     }
     
+    //--> Requests here
+    /*
+     *  Request money by:
+     *      - Sender sends Account ID & PublicKey to Receiver
+     *      - Receiver receives request (w/ Sender's Account ID & PublicKey)
+     *      - Receiver is prompted of the request to pay (?)
+     *
+    */
     
     @IBAction func Request2Home(_ sender: Any) {
         self.performSegue(withIdentifier: "Request2HomeSegue", sender: self)

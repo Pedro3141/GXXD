@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import stellarsdk
 
 class PayViewController: UIViewController {
 
     @IBOutlet weak var AmountToPay: UILabel! //entered amount
+    let sdk = StellarSDK();
     
     //Number buttons have a tag number+1, 1 == 2, 0 == 1
     @IBAction func Numbers(_ sender: UIButton)
@@ -23,8 +25,6 @@ class PayViewController: UIViewController {
         }
     }
     
-    
-    
     //Segue
     @IBAction func Pay2HomeButton(_ sender: Any) {
         
@@ -32,6 +32,11 @@ class PayViewController: UIViewController {
         
     }
     
+    //---Payment transactions
+    /*
+    *       - Sender enters payment info (amount, receiver)
+    *       - Receiver receives payment
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
